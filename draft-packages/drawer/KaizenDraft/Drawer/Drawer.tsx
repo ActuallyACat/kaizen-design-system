@@ -10,7 +10,7 @@ import React, { useEffect, useLayoutEffect, useRef, useState } from "react"
 import classNames from "classnames"
 import closeIcon from "@kaizen/component-library/icons/close.icon.svg"
 
-const styles = require("./ModalDrawer.scss")
+const styles = require("./Drawer.scss")
 
 interface Props {
   readonly isOpen: boolean
@@ -36,9 +36,9 @@ function useWindowHeight() {
   return windowHeight
 }
 
-type ModalDrawer = React.FunctionComponent<Props>
+type Drawer = React.FunctionComponent<Props>
 
-export const ModalDrawer: ModalDrawer = ({
+export const Drawer: Drawer = ({
   isOpen,
   title,
   onDismiss,

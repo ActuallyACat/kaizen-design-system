@@ -1,28 +1,28 @@
 import * as React from "react"
 
-import { ModalDrawer } from "@kaizen/draft-modal-drawer"
+import { Drawer } from "@kaizen/draft-drawer"
 
 export default {
-  title: "ModalDrawer (React)",
-  component: ModalDrawer,
+  title: "Drawer (React)",
+  component: Drawer,
   parameters: {
     info: {
       text: `
-        import { ModalDrawer } from "@kaizen/draft-modal-drawer";
+        import { Drawer } from "@kaizen/draft-drawer";
       `,
     },
   },
 }
 
 export const DefaultStory = () => (
-  <ModalDrawer
+  <Drawer
     isOpen={true}
     type="positive"
     title="hello modal drawer"
     onDismiss={() => null}
   >
     hello world!
-  </ModalDrawer>
+  </Drawer>
 )
 
 DefaultStory.story = {

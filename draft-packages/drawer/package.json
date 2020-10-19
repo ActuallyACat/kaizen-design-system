@@ -1,5 +1,5 @@
 {
-  "name": "@kaizen/draft-modal-drawer",
+  "name": "@kaizen/draft-drawer",
   "version": "1.0.0",
   "description": "The draft modal-drawer component",
   "scripts": {
