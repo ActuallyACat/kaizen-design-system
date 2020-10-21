@@ -25,6 +25,7 @@ interface Props {
   readonly automationId?: string
   readonly children: React.ReactNode
   readonly submitDisabled?: boolean
+  readonly closeOnOutsideModalClick?: boolean
 }
 
 type InputEditModal = React.FunctionComponent<Props>
@@ -41,11 +42,12 @@ const InputEditModal = ({
   automationId,
   children,
   submitDisabled = false,
+  closeOnOutsideModalClick = true,
 }: Props) => (
   <GenericModal
     isOpen={isOpen}
     onEscapeKeyup={onDismiss}
-    onOutsideModalClick={onDismiss}
+    onOutsideModalClick={closeOnOutsideModalClick ? onDismiss : undefined}
     automationId={automationId}
   >
     <div className={styles.modal} dir={localeDirection}>
