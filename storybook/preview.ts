@@ -1,5 +1,8 @@
 import { addParameters } from "@storybook/react"
+import { defineCustomElements } from "../stencil-components/dist/esm/loader"
 import { backgrounds } from "./backgrounds"
+
+defineCustomElements()
 
 // Polyfill for :focus-visible pseudo-selector
 // See: https://github.com/WICG/focus-visible
