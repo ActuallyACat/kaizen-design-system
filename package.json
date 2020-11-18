@@ -4,13 +4,14 @@
     "packages/*",
     "draft-packages/*",
     "legacy-packages/*",
+    "stencil-components/*",
     "site"
   ],
   "engines": {
     "node": "^14.5.0"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006 -c storybook",
+    "storybook": "lerna run build-stencil && start-storybook -p 6006 -c storybook",
     "storybook:build": "build-storybook -c storybook -o storybook/public",
     "gatsby": "yarn workspace site gatsby",
     "eslint": "eslint . -c .eslintrc.js --ext .ts,.tsx",
