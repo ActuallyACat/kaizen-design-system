@@ -22,11 +22,11 @@ export class MyComponent {
    */
   @Prop() last: string;
 
-  private getText(): string {
-    return format(this.first, this.middle, this.last);
+  render() {
+    return <div>Hello! I'm {this.getText()}</div>;
   }
 
-  render() {
-    return <div>Hello, World! I'm {this.getText()}</div>;
+  private getText(): string {
+    return format(this.first, this.middle, this.last);
   }
 }
