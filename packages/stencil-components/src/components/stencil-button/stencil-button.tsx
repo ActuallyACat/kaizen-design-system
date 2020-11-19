@@ -31,22 +31,18 @@ export class StencilButton {
   renderContent() {
     return (
       <span class="content">
-        {this.icon && this.iconPosition !== "end" && this.renderIcon(this.icon)}
+        {this.icon && this.iconPosition !== "end" && this.renderIcon()}
         {(!this.icon || !this.iconButton) && (
           <span class="label">{this.label}</span>
         )}
-        {this.icon && this.iconPosition === "end" && this.renderIcon(this.icon)}
+        {this.icon && this.iconPosition === "end" && this.renderIcon()}
         <slot name="additionalContent" />
       </span>
     )
   }
 
-  renderIcon(icon: SVGIcon) {
-    return (
-      <span class="iconWrapper">
-        <stencil-icon icon={icon} role="presentation"></stencil-icon>
-      </span>
-    )
+  renderIcon() {
+    return <span class="iconWrapper"></span>
   }
 
   buttonClass() {

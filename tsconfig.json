@@ -12,10 +12,6 @@
     "noEmit": true
   },
   "files": ["./types.d.ts"],
-  "include": [
-    "./packages/**/*",
-    "./draft-packages/**/*",
-    "stencil-components/components"
-  ],
+  "include": ["./packages/**/*", "./draft-packages/**/*"],
   "exclude": ["**/node_modules"]
 }

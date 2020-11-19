@@ -10,20 +10,24 @@ export class MyComponent {
   /**
    * The first name
    */
-  @Prop() first: string
+  @Prop() first: string = ""
 
   /**
    * The middle name
    */
-  @Prop() middle: string
+  @Prop() middle: string = ""
 
   /**
    * The last name
    */
-  @Prop() last: string
+  @Prop() last: string = ""
 
   render() {
-    return <div>Hello, world! I'm {this.getText()}. Some change</div>
+    return (
+      <div>
+        Hello, world! I'm {this.last}. Here's a {this.first} superficial change
+      </div>
+    )
   }
 
   private getText(): string {

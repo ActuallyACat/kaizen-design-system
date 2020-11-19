@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import * as React from "react"
 import { StencilButton } from "../components"
 
@@ -13,6 +12,9 @@ export default {
     actions: {
       argTypesRegex: "^on.*",
     },
+    docs: () => `
+      <Button thing={thing} />
+    `,
   },
 }
 
