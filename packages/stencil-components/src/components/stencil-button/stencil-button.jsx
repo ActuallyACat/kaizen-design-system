@@ -24,9 +24,7 @@ let StencilButton = class StencilButton {
       </span>);
     }
     renderIcon() {
-        return (<span class="iconWrapper">
-
-      </span>);
+        return <span class="iconWrapper"></span>;
     }
     buttonClass() {
         const variantClass = (this.destructive && "destructive") ||

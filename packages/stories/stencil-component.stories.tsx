@@ -1,5 +1,5 @@
 import * as React from "react"
-import { StencilButton } from "../components"
+import { StencilButton } from "../stencil-components/components"
 
 export default {
   title: "Stencil Button",

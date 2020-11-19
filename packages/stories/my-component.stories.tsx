@@ -1,6 +1,6 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import * as React from "react"
-import { MyComponent } from "../components"
+import { MyComponent } from "../stencil-components/components"
 
 export default {
   title: "Stencil Test (React)",
