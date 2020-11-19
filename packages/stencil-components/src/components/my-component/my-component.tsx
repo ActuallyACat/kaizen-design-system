@@ -23,7 +23,7 @@ export class MyComponent {
   @Prop() last: string;
 
   render() {
-    return <div>Hello! I'm {this.getText()}</div>;
+    return <div>Hello, world! I'm {this.getText()}. Some change</div>;
   }
 
   private getText(): string {

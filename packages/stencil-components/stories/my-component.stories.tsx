@@ -2,8 +2,9 @@
 import * as React from 'react';
 import { MyComponent } from '../components';
 
+console.log('PRIMARY_STORY', PRIMARY_STORY);
 export default {
-  title: 'Stencil (React)',
+  title: 'Stencil Test (React)',
   component: MyComponent,
   args: {
     first: 'a',
@@ -12,11 +13,6 @@ export default {
   parameters: {
     actions: {
       argTypesRegex: '^on.*',
-    },
-    info: {
-      text: `
-        Some useful text should go here
-      `,
     },
   },
 };

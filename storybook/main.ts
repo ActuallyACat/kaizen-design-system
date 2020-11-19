@@ -13,9 +13,9 @@ import {
 module.exports = {
   stories: [
     "../packages/component-library/stories/*.stories.tsx",
+    "../packages/stencil-components/stories/*.stories.tsx",
     "../draft-packages/stories/*.stories.tsx",
     "../legacy-packages/stories/*.stories.tsx",
-    "../stencil-components/stories/*.stories.tsx",
   ],
   addons: [
     path.resolve("./storybook/gtm-addon/register"),

@@ -1,5 +1,5 @@
 import { addParameters } from "@storybook/react"
-import { defineCustomElements } from "../stencil-components/dist/esm/loader"
+import { defineCustomElements } from "../packages/stencil-components/dist/esm/loader"
 import { backgrounds } from "./backgrounds"
 
 defineCustomElements()

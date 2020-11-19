@@ -1,10 +1,5 @@
 {
   "version": "independent",
   "npmClient": "yarn",
-  "packages": [
-    "packages/*",
-    "draft-packages/*",
-    "legacy-packages/*",
-    "stencil-components/*"
-  ]
+  "packages": ["packages/*", "draft-packages/*", "legacy-packages/*"]
 }
