@@ -23,6 +23,11 @@ module.exports = {
     "sort-imports-es6-autofix",
     "prefer-arrow",
   ],
+  ignorePatterns: [
+    "packages/stencil-components/components/**",
+    "packages/stencil-components/loader/**",
+    "packages/stencil-components/dist/**",
+  ],
   rules: {
     "@typescript-eslint/adjacent-overload-signatures": "error",
     "@typescript-eslint/array-type": [

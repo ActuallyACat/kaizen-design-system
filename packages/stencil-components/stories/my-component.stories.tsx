@@ -1,20 +1,21 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-import * as React from 'react';
-import { MyComponent } from '../components';
+import * as React from "react"
+import { MyComponent } from "../components"
 
-console.log('PRIMARY_STORY', PRIMARY_STORY);
 export default {
-  title: 'Stencil Test (React)',
+  title: "Stencil Test (React)",
   component: MyComponent,
   args: {
-    first: 'a',
-    last: 'stencil component',
+    first: "a",
+    last: "stencil component",
   },
   parameters: {
     actions: {
-      argTypesRegex: '^on.*',
+      argTypesRegex: "^on.*",
     },
   },
-};
+}
 
-export const StencilComponent = args => <MyComponent first="a" last="stencil component" {...args} />;
+export const StencilComponent = args => (
+  <MyComponent first="a" last="stencil component" {...args} />
+)

@@ -1,19 +1,19 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-import * as React from 'react';
-import { StencilButton } from '../components';
+import * as React from "react"
+import { StencilButton } from "../components"
 
 export default {
-  title: 'Stencil Button',
+  title: "Stencil Button",
   component: StencilButton,
   args: {
-    label: 'label',
+    label: "label",
     disabled: false,
   },
   parameters: {
     actions: {
-      argTypesRegex: '^on.*',
+      argTypesRegex: "^on.*",
     },
   },
-};
+}
 
-export const StencilComponent = args => <StencilButton disabled {...args} />;
+export const StencilComponent = args => <StencilButton disabled {...args} />
