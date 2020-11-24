@@ -15,8 +15,9 @@
     "loader/"
   ],
   "scripts": {
-    "build": "stencil build --docs",
+    "prebuild": "stencil build --docs",
     "build-stencil": "stencil build --watch",
+    "clean": "rimraf 'dist/**/*' 'loader/**/*' 'www/**/*' 'src/**/*.jsx' 'src/**/*.js'",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
@@ -29,6 +30,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@stencil/react-output-target": "^0.0.9"
+    "@stencil/react-output-target": "^0.0.9",
+    "rimraf": "^3.0.2"
   }
 }

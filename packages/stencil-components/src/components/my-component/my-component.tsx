@@ -1,5 +1,4 @@
 import { Component, Prop, h } from "@stencil/core"
-import { format } from "../../utils/utils"
 
 @Component({
   tag: "my-component",
@@ -28,9 +27,5 @@ export class MyComponent {
         Hello, world! I'm {this.last}. Here's a {this.first} superficial change
       </div>
     )
-  }
-
-  private getText(): string {
-    return format(this.first, this.middle, this.last)
   }
 }
