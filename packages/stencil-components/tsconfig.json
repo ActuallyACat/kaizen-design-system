@@ -1,21 +1,18 @@
 {
-  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "lib": ["es2018", "dom"],
     "allowSyntheticDefaultImports": true,
     "allowUnreachableCode": false,
     "declaration": false,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "target": "es2017",
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
     "experimentalDecorators": true,
-    "jsx": "preserve",
-    "jsxFactory": "h",
-    "skipLibCheck": true,
-    "noEmit": false
+    "lib": ["dom", "es2017"],
+    "moduleResolution": "node",
+    "module": "esnext",
+    "target": "es2017",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "jsx": "react",
+    "jsxFactory": "h"
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "loader", "dist", "components"]
+  "include": ["src", "./stencil.config.ts"],
+  "exclude": ["node_modules"]
 }
