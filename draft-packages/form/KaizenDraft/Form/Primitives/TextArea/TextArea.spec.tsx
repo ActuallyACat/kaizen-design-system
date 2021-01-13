@@ -12,7 +12,12 @@ describe("<TextArea />", () => {
 
   it("should render the default value", () => {})
 
-  it("should render the rows attribute when passed in as a prop", () => {})
+  it("should render the rows attribute when passed in as a prop", () => {
+    const { container } = render(<TextArea data-testid="wrapper" rows={15} />)
+    expect(
+      Number(container.querySelector("textarea")?.getAttribute("rows"))
+    ).toEqual(15)
+  })
 
   it("should fire an onchange event when value is changed", () => {})
 
