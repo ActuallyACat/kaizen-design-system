@@ -18,7 +18,7 @@ export default {
       page: () => (
         <>
           <Title />
-          <code>{'import { Box } from "..";'}</code>
+          <code>{'import { Box } from "@kaizen/component-library";'}</code>
           <Subtitle />
           <Description />
           <Primary />
