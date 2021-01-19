@@ -21,8 +21,7 @@
     "dist",
     "styles",
     "KaizenDraft",
-    "!docs",
-    "!tsconfig.dist.json"
+    "!docs"
   ],
   "author": "",
   "private": false,
