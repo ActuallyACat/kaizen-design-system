@@ -3,6 +3,60 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-tag@1.6.4...@kaizen/draft-tag@1.7.0) (2021-01-19)
+
+
+### Features
+
+* Remove cursor css for Tag components ([#947](https://github.com/cultureamp/kaizen-design-system/issues/947)) ([96d3167](https://github.com/cultureamp/kaizen-design-system/commit/96d3167a0a9f78cca39db17c3c6c8f3e6a704e03))
+
+
+
+
+
+## [1.6.4](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-tag@1.6.3...@kaizen/draft-tag@1.6.4) (2021-01-18)
+
+**Note:** Version bump only for package @kaizen/draft-tag
+
+
+
+
+
+## [1.6.3](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-tag@1.6.2...@kaizen/draft-tag@1.6.3) (2021-01-14)
+
+**Note:** Version bump only for package @kaizen/draft-tag
+
+
+
+
+
+## [1.6.2](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-tag@1.6.1...@kaizen/draft-tag@1.6.2) (2021-01-11)
+
+**Note:** Version bump only for package @kaizen/draft-tag
+
+
+
+
+
+## [1.6.1](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-tag@1.6.0...@kaizen/draft-tag@1.6.1) (2021-01-08)
+
+**Note:** Version bump only for package @kaizen/draft-tag
+
+
+
+
+
+# [1.6.0](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-tag@1.5.58...@kaizen/draft-tag@1.6.0) (2021-01-07)
+
+
+### Features
+
+* Export *Props from packages ([#917](https://github.com/cultureamp/kaizen-design-system/issues/917)) ([53656b6](https://github.com/cultureamp/kaizen-design-system/commit/53656b60ff51da40b22d0e489149dbf9eee22386))
+
+
+
+
+
 ## [1.5.58](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-tag@1.5.57...@kaizen/draft-tag@1.5.58) (2020-12-16)
 
 **Note:** Version bump only for package @kaizen/draft-tag

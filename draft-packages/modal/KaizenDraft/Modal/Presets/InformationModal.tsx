@@ -12,7 +12,7 @@ import {
 
 import styles from "./InformationModal.scss"
 
-interface Props {
+export interface InformationModalProps {
   readonly isOpen: boolean
   readonly title: string
   readonly onConfirm?: () => void
@@ -23,7 +23,7 @@ interface Props {
   readonly children: React.ReactNode
 }
 
-type InformationModal = React.FunctionComponent<Props>
+type InformationModal = React.FunctionComponent<InformationModalProps>
 
 const InformationModal = ({
   isOpen,
@@ -34,7 +34,7 @@ const InformationModal = ({
   automationId,
   renderBackground,
   children,
-}: Props) => (
+}: InformationModalProps) => (
   <GenericModal
     isOpen={isOpen}
     onEscapeKeyup={onDismiss}
@@ -61,7 +61,7 @@ const InformationModal = ({
       </ModalBody>
       {onConfirm != null && (
         <ModalFooter
-          actions={[{ label: confirmLabel, action: onConfirm }]}
+          actions={[{ label: confirmLabel, onClick: onConfirm }]}
           appearance={"primary"}
           automationId={automationId}
         />

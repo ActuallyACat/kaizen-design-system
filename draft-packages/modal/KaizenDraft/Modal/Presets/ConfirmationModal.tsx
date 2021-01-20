@@ -9,6 +9,7 @@ import {
   PositiveFemale,
 } from "@kaizen/draft-illustration"
 
+import { ButtonProps } from "@kaizen/draft-button"
 import {
   GenericModal,
   ModalAccessibleDescription,
@@ -20,7 +21,7 @@ import {
 
 import styles from "./ConfirmationModal.scss"
 
-interface Props {
+export interface ConfirmationModalProps {
   readonly isOpen: boolean
   readonly type: ModalType
   readonly title: string
@@ -28,11 +29,12 @@ interface Props {
   readonly onDismiss: () => void
   readonly confirmLabel?: string
   readonly dismissLabel?: string
+  readonly confirmWorking?: { label: string; labelHidden?: boolean }
   readonly automationId?: string
   readonly children: React.ReactNode
 }
 
-type ConfirmationModal = React.FunctionComponent<Props>
+type ConfirmationModal = React.FunctionComponent<ConfirmationModalProps>
 type ModalType = "positive" | "informative" | "negative" | "cautionary"
 
 const getIcon = (type: ModalType) => {
@@ -53,17 +55,34 @@ const ConfirmationModal = ({
   type,
   title,
   onConfirm,
-  onDismiss,
   confirmLabel = "Confirm",
   dismissLabel = "Cancel",
+  confirmWorking,
   automationId,
   children,
-}: Props) => {
-  const footerActions: Array<{ label: string; action: () => void }> = []
+  ...props
+}: ConfirmationModalProps) => {
+  const onDismiss = confirmWorking ? undefined : props.onDismiss
+
+  const footerActions: ButtonProps[] = []
   if (onConfirm) {
-    footerActions.push({ label: confirmLabel, action: onConfirm })
+    const confirmAction = { label: confirmLabel, onClick: onConfirm }
+    const workingProps = confirmWorking
+      ? {
+          working: true,
+          workingLabel: confirmWorking.label,
+          workingLabelHidden: confirmWorking.labelHidden,
+        }
+      : {}
+
+    footerActions.push({ ...confirmAction, ...workingProps })
   }
-  footerActions.push({ label: dismissLabel, action: onDismiss })
+
+  footerActions.push({
+    label: dismissLabel,
+    onClick: onDismiss,
+    disabled: !!confirmWorking,
+  })
 
   return (
     <GenericModal

@@ -1,12 +1,12 @@
 {
   "name": "@kaizen/draft-filter-menu-button",
-  "version": "1.1.3",
+  "version": "1.1.10",
   "description": "The draft filter-menu-button component",
   "scripts": {
     "prepublish": "tsc --project tsconfig.dist.json",
     "build": "yarn clean && yarn prepublish",
     "build:watch": "yarn clean && yarn prepublish --watch",
-    "clean": "rimraf '*.d.ts' '*.js' '*.map' 'KaizenDraft/**/*.d.ts' 'KaizenDraft/**/*.js' 'KaizenDraft/**/*.map'"
+    "clean": "rimraf '**/*.d.ts' '**/*.js' '**/*.map'"
   },
   "repository": {
     "type": "git",
@@ -25,15 +25,16 @@
     "!**/*.snap",
     "!draft-templates",
     "!stories",
+    "!docs",
     "!tsconfig.dist.json"
   ],
   "author": "",
   "private": false,
   "license": "MIT",
   "dependencies": {
-    "@kaizen/component-library": "^8.0.9",
-    "@kaizen/draft-button": "^3.0.9",
-    "@kaizen/draft-menu": "^2.5.6",
+    "@kaizen/component-library": "^8.1.3",
+    "@kaizen/draft-button": "^3.0.13",
+    "@kaizen/draft-menu": "^2.5.10",
     "classnames": "^2.2.6"
   },
   "peerDependencies": {

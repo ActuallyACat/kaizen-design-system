@@ -3,6 +3,86 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-modal@4.2.6...@kaizen/draft-modal@5.0.0) (2021-01-18)
+
+
+### Features
+
+* Add ability to use 'working' confirm/submit buttons on input/edit and confirmation modals ([#941](https://github.com/cultureamp/kaizen-design-system/issues/941)) ([4854906](https://github.com/cultureamp/kaizen-design-system/commit/4854906b16f1b81e9e595a68e01ae8adc03b8b8c))
+
+
+### BREAKING CHANGES
+
+* submitDisabled has been removed from InputEditModal, use submitWorking instead.
+* ModalFooter's 'actions' prop now accepts ButtonProps[], which means the 'action' property was renamed to 'onClick'
+
+* Disable ability to close the modal when submit/confirm is 'working'
+
+Co-authored-by: Ally Beaton <allanna.beaton@gmail.com>
+
+
+
+
+
+## [4.2.6](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-modal@4.2.5...@kaizen/draft-modal@4.2.6) (2021-01-18)
+
+**Note:** Version bump only for package @kaizen/draft-modal
+
+
+
+
+
+## [4.2.5](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-modal@4.2.4...@kaizen/draft-modal@4.2.5) (2021-01-18)
+
+**Note:** Version bump only for package @kaizen/draft-modal
+
+
+
+
+
+## [4.2.4](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-modal@4.2.3...@kaizen/draft-modal@4.2.4) (2021-01-14)
+
+**Note:** Version bump only for package @kaizen/draft-modal
+
+
+
+
+
+## [4.2.3](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-modal@4.2.2...@kaizen/draft-modal@4.2.3) (2021-01-11)
+
+**Note:** Version bump only for package @kaizen/draft-modal
+
+
+
+
+
+## [4.2.2](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-modal@4.2.1...@kaizen/draft-modal@4.2.2) (2021-01-10)
+
+**Note:** Version bump only for package @kaizen/draft-modal
+
+
+
+
+
+## [4.2.1](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-modal@4.2.0...@kaizen/draft-modal@4.2.1) (2021-01-08)
+
+**Note:** Version bump only for package @kaizen/draft-modal
+
+
+
+
+
+# [4.2.0](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-modal@4.1.7...@kaizen/draft-modal@4.2.0) (2021-01-07)
+
+
+### Features
+
+* Export *Props from packages ([#917](https://github.com/cultureamp/kaizen-design-system/issues/917)) ([53656b6](https://github.com/cultureamp/kaizen-design-system/commit/53656b60ff51da40b22d0e489149dbf9eee22386))
+
+
+
+
+
 ## [4.1.7](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-modal@4.1.6...@kaizen/draft-modal@4.1.7) (2020-12-16)
 
 **Note:** Version bump only for package @kaizen/draft-modal

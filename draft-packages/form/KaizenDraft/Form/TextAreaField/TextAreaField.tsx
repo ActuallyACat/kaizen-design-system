@@ -1,13 +1,8 @@
 import React, { TextareaHTMLAttributes } from "react"
-import {
-  FieldGroup,
-  FieldMessage,
-  InputStatus,
-  Label,
-  TextArea,
-} from "../index"
+import { FieldGroup, FieldMessage, InputStatus, Label, TextArea } from ".."
 
-interface Props extends TextareaHTMLAttributes<HTMLTextAreaElement> {
+export interface TextAreaFieldProps
+  extends TextareaHTMLAttributes<HTMLTextAreaElement> {
   labelText: string | React.ReactNode
   inline?: boolean
   reversed?: boolean
@@ -19,7 +14,7 @@ interface Props extends TextareaHTMLAttributes<HTMLTextAreaElement> {
   variant?: "default" | "prominent"
 }
 
-const TextAreaField: React.FunctionComponent<Props> = props => {
+const TextAreaField: React.FunctionComponent<TextAreaFieldProps> = props => {
   const {
     id,
     labelText,
