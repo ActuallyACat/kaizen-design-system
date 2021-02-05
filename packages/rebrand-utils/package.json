@@ -1,0 +1,31 @@
+{
+  "name": "rebrand-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsnd --files ./src/index.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "sast": "0.8.1",
+    "typescript": "4.1.3",
+    "ts-node-dev": "1.1.1",
+    "@types/sass": "1.16.0",
+    "@types/unist": "1.0.0",
+    "polished": "4.1.0",
+    "scss-parser": "1.0.4",
+    "query-ast": "1.0.3",
+    "@types/scss-parser": "1.0.0",
+    "flat": "5.0.2",
+    "@types/flat": "0.0.28",
+    "mathjs": "9.1.0",
+    "@types/mathjs": "6.0.1",
+    "color": "3.1.3",
+    "@types/color": "3.0.0",
+    "chroma-js": "2.1.0",
+    "@types/chroma-js": "1.3.4",
+    "@kaizen/design-tokens": "*"
+  }
+}

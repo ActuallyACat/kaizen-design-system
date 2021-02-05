@@ -1,0 +1,9 @@
+// Brand 2020 Variables
+
+$my-color: $kz-color-wisteria-800;
+$my-other-var: 5px;
+
+.test {
+  color: add-tint($my-color, 90%);
+  background: add-tint($kz-color-wisteria-800, 80%);
+}

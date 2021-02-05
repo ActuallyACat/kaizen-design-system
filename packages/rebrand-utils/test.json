@@ -1,0 +1,14 @@
+{
+    "kz": {
+      "color": {
+        "wisteria": {
+          "100": "--kz-color-wisteria-100",
+          "200": "--kz-color-wisteria-200",
+          "300": "--kz-color-wisteria-300",
+          "400": "--kz-color-wisteria-400",
+          "500": "--kz-color-wisteria-500",
+          "600": "--kz-color-wisteria-600",
+          "700": "--kz-color-wisteria-700",
+          "800": "--kz-color-wisteria-800",
+        }
+    }}
