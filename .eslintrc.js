@@ -27,6 +27,8 @@ module.exports = {
     "import",
     "sort-imports-es6-autofix",
     "prefer-arrow",
+    "no-unsafe-innerhtml",
+    "security",
   ],
   rules: {
     "@typescript-eslint/adjacent-overload-signatures": "error",
@@ -212,6 +214,20 @@ module.exports = {
     ],
     "use-isnan": "error",
     "valid-typeof": "off",
+    /** security plugin rules **/
+    "no-unsafe-innerhtml/no-unsafe-innerhtml": 2,
+    "security/detect-non-literal-fs-filename": 2,
+    "security/detect-non-literal-regexp": 2,
+    "security/detect-unsafe-regex": 2,
+    "security/detect-buffer-noassert": 2,
+    "security/detect-child-process": 2,
+    "security/detect-disable-mustache-escape": 2,
+    "security/detect-eval-with-expression": 2,
+    "security/detect-no-csrf-before-method-override": 2,
+    "security/detect-non-literal-require": 2,
+    "security/detect-object-injection": 2,
+    "security/detect-possible-timing-attacks": 1,
+    "security/detect-pseudoRandomBytes": 2,
   },
   overrides: [
     {
