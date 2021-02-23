@@ -19,6 +19,7 @@ import lockIcon from "@kaizen/component-library/icons/lock.icon.svg"
 import userIcon from "@kaizen/component-library/icons/user.icon.svg"
 import { withDesign } from "storybook-addon-designs"
 import { BenefitsSurvey, Negative } from "@kaizen/draft-illustration"
+import { default as AnimatedModalDemo } from "../KaizenDraft/Modal/Presets/AnimatedModalDemo"
 import { figmaEmbed } from "../../../storybook/helpers"
 
 import styles from "./Modal.stories.scss"
@@ -926,3 +927,27 @@ export const Roadblock = () => (
 )
 
 Roadblock.storyName = "Roadblock"
+
+export const AnimatedDemo = () => (
+  <ModalStateContainer isInitiallyOpen={false}>
+    {({ open, close, isOpen }) => (
+      <div>
+        <Button label="Open modal" onClick={open} />
+        <AnimatedModalDemo
+          isOpen={isOpen}
+          type="positive"
+          title="Positive title"
+          onConfirm={close}
+          onDismiss={close}
+        >
+          <div style={{ textAlign: "center" }}>
+            <Paragraph variant="body">
+              Modals contain smaller pieces of content and can provide
+              additional information to aid the user.
+            </Paragraph>
+          </div>
+        </AnimatedModalDemo>
+      </div>
+    )}
+  </ModalStateContainer>
+)
