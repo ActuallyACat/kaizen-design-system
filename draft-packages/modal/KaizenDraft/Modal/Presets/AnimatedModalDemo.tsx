@@ -106,7 +106,12 @@ const ConfirmationModal = ({
             })}
           >
             <div className={styles.iconContainer}>
-              <video className={styles.spotIcon} autoPlay src={animation} />
+              <video
+                loop
+                className={styles.spotIcon}
+                autoPlay
+                src={animation}
+              />
             </div>
             <ModalAccessibleLabel>
               <Heading tag="h1" variant="heading-1">
