@@ -25,6 +25,8 @@ export interface RoadblockModalProps {
 
 type RoadblockModal = React.FunctionComponent<RoadblockModalProps>
 
+const roadblock = require("../videos/Roadblock_Timed_v03.mp4").default
+
 const RoadblockModal = ({
   isOpen,
   title,
@@ -44,9 +46,7 @@ const RoadblockModal = ({
         <div className={styles.header}>
           <div className={styles.headerBackground}></div>
           <div className={styles.iconContainer}>
-            <div className={styles.spotIcon}>
-              <Negative alt="" />
-            </div>
+            <video className={styles.spotIcon} loop autoPlay src={roadblock} />
           </div>
           <ModalAccessibleLabel>
             <Heading tag="h1" variant="heading-1">
