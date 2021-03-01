@@ -37,18 +37,19 @@ export interface ConfirmationModalProps {
 type ConfirmationModal = React.FunctionComponent<ConfirmationModalProps>
 type ModalType = "positive" | "informative" | "negative" | "cautionary"
 
-const getIcon = (type: ModalType) => {
-  switch (type) {
-    case "cautionary":
-      return <Cautionary alt="" />
-    case "informative":
-      return <Informative alt="" />
-    case "negative":
-      return <Negative alt="" />
-    case "positive":
-      return <PositiveFemale alt="" />
-  }
+// START TEMPORARY MP4 STUFF ---------------------------------------------------
+
+const mp4File: Record<ModalType, any> = {
+  cautionary: require("../videos/Cautionary_Timed_v02.mp4").default,
+  informative: require("../videos/Info_Timed_v02.mp4").default,
+  negative: require("../videos/Negative_Timed_v02.mp4").default,
+  positive: require("../videos/Positive_Timed_v01.mp4").default,
+  // roadblock: require("../videos/Roadblock_Timed_v03.mp4").default,
 }
+
+const getIcon = (type: ModalType) => mp4File[type]
+
+// END TEMPORARY MP4 STUFF -----------------------------------------------------
 
 const ConfirmationModal = ({
   isOpen,
@@ -102,7 +103,12 @@ const ConfirmationModal = ({
             })}
           >
             <div className={styles.iconContainer}>
-              <div className={styles.spotIcon}>{getIcon(type)}</div>
+              <video
+                className={styles.spotIcon}
+                autoPlay
+                loop
+                src={getIcon(type)}
+              />
             </div>
             <ModalAccessibleLabel>
               <Heading tag="h1" variant="heading-1">

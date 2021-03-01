@@ -10,40 +10,40 @@ x-defaults: &defaults
         run: build
 
 steps:
-  - name: ":balloon: Release"
-    command: ".buildkite/scripts/release.sh"
-    branches: "master"
-    <<: *defaults
-    plugins:
-      - cultureamp/aws-assume-role#v0.1.0:
-          role: "${KAIZEN_ROLE_ARN}"
-      - docker-compose#v3.0.3:
-          run: release
+  # - name: ":balloon: Release"
+  #   command: ".buildkite/scripts/release.sh"
+  #   branches: "master"
+  #   <<: *defaults
+  #   plugins:
+  #     - cultureamp/aws-assume-role#v0.1.0:
+  #         role: "${KAIZEN_ROLE_ARN}"
+  #     - docker-compose#v3.0.3:
+  #         run: release
 
-  - name: ":hatched_chick: Release (canary)"
-    command: ".buildkite/scripts/release.sh"
-    branches: "canary"
-    <<: *defaults
-    plugins:
-      - cultureamp/aws-assume-role#v0.1.0:
-          role: "${KAIZEN_ROLE_ARN}"
-      - docker-compose#v3.0.3:
-          run: release
+  # - name: ":hatched_chick: Release (canary)"
+  #   command: ".buildkite/scripts/release.sh"
+  #   branches: "canary"
+  #   <<: *defaults
+  #   plugins:
+  #     - cultureamp/aws-assume-role#v0.1.0:
+  #         role: "${KAIZEN_ROLE_ARN}"
+  #     - docker-compose#v3.0.3:
+  #         run: release
 
-  - name: ":nut_and_bolt: Compile"
-    command: ".buildkite/scripts/compile.sh"
-    branches: "!master"
-    <<: *defaults
+  # - name: ":nut_and_bolt: Compile"
+  #   command: ".buildkite/scripts/compile.sh"
+  #   branches: "!master"
+  #   <<: *defaults
 
-  - name: ":mag: Lint"
-    command: ".buildkite/scripts/lint.sh"
-    branches: "!master"
-    <<: *defaults
+  # - name: ":mag: Lint"
+  #   command: ".buildkite/scripts/lint.sh"
+  #   branches: "!master"
+  #   <<: *defaults
 
-  - name: ":pencil2: Test"
-    command: ".buildkite/scripts/test.sh"
-    branches: "!master"
-    <<: *defaults
+  # - name: ":pencil2: Test"
+  #   command: ".buildkite/scripts/test.sh"
+  #   branches: "!master"
+  #   <<: *defaults
 
   - name: ":package: Build (site)"
     command: ".buildkite/scripts/build-site.sh"
