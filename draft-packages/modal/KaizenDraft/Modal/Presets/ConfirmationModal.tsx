@@ -37,18 +37,29 @@ export interface ConfirmationModalProps {
 type ConfirmationModal = React.FunctionComponent<ConfirmationModalProps>
 type ModalType = "positive" | "informative" | "negative" | "cautionary"
 
-const getIcon = (type: ModalType) => {
-  switch (type) {
-    case "cautionary":
-      return <Cautionary alt="" />
-    case "informative":
-      return <Informative alt="" />
-    case "negative":
-      return <Negative alt="" />
-    case "positive":
-      return <PositiveFemale alt="" />
-  }
+// START TEMPORARY LOTTIEFILE STUFF --------------------------------------------
+
+// eslint-disable-next-line
+const { Player } = require("@lottiefiles/react-lottie-player")
+
+const lottieFiles: Record<ModalType, any> = {
+  cautionary: require("../lottiefiles/Cautionary_Timed_v02.lottie"),
+  informative: require("../lottiefiles/Info_Timed_v02.lottie"),
+  negative: require("../lottiefiles/Negative_Timed_v02.lottie"),
+  positive: require("../lottiefiles/Positive_Timed_v01.lottie"),
+  // roadblock: require("../lottiefiles/Roadblock_Timed_v03.lottie"),
 }
+
+const getIcon = (type: ModalType) => (
+  <Player
+    autoplay
+    loop
+    src={lottieFiles[type]}
+    style={{ height: "300px", width: "300px" }}
+  />
+)
+
+// END TEMPORARY LOTTIEFILE STUFF ----------------------------------------------
 
 const ConfirmationModal = ({
   isOpen,

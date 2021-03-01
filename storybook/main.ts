@@ -36,6 +36,11 @@ module.exports = {
       ...[babel, styles, svgs, svgIcons, elm].map(excludeExternalModules)
     )
 
+    config.module.rules.push({
+      test: /\.lottie$/,
+      use: "file-loader",
+    })
+
     config.resolve.extensions.push(".ts", ".tsx")
 
     // Return the altered config
