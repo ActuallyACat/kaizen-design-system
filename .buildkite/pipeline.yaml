@@ -8,6 +8,7 @@ x-defaults: &defaults
   plugins:
     - docker-compose#v3.0.3:
         run: build
+        mount-buildkite-agent: true
 
 steps:
   - name: ":balloon: Release"
