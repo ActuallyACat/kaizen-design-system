@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
-set -e
+set -eo pipefail
 
 yarn install --frozen-lockfile
 yarn test --ci --collect-coverage
+
+buildkite-agent artifact upload --help
 
 buildkite-agent artifact upload "coverage/*"
 
