@@ -63,12 +63,8 @@ $heading-active-color: $kz-var-color-wisteria-100;
   flex: 1 1 auto;
 }
 
-.defaultVariant {
+.highlightOpen {
   background-color: $heading-active-color;
-}
-
-.clearVariant {
-  border-bottom: 1px solid $kz-var-color-wisteria-200;
 }
 
 .sticky {
