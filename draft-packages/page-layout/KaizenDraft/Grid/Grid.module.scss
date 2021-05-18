@@ -1,0 +1,17 @@
+.gridWrapper {
+  display: grid;
+  column-gap: 15px;
+  row-gap: 15px;
+}
+
+.twoCol {
+  grid-template-columns: 1fr 1fr;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.oneCol {
+  grid-template-columns: 1fr;
+}
