@@ -86,6 +86,7 @@ export const Select = (props: SelectProps & ReactSelectProps<any, boolean>) => {
         IndicatorsContainer,
         ClearIndicator,
         IndicatorSeparator: null,
+        ...props.components,
       }}
       className={classes}
     />
