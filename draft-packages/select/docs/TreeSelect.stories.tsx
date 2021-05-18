@@ -1,7 +1,6 @@
 import React, { useState } from "react"
-import { AsyncSelect, Select } from "@kaizen/draft-select"
+import { Select } from "@kaizen/draft-select"
 import type {
-  MultiValueProps,
   OptionTypeBase,
   ValueContainerProps,
   GroupedOptionsType,
@@ -30,7 +29,7 @@ const StoryContainer = ({ children }: { children: React.ReactNode }) => (
 )
 
 const ALL_ITEMS = "___ALL___"
-interface OptionType extends OptionTypeBase {}
+type OptionType = OptionTypeBase
 const ValueContainer = ({
   children,
   hasValue,
@@ -91,7 +90,6 @@ export const MultiSelectTree = () => {
         }}
         isMulti={true}
         onChange={(value: OptionType[], action) => {
-          console.log(value, action)
           if (action.action === "select-option") {
             if (action.option.value === ALL_ITEMS) {
               // select all the things, a flatmap would be nice
