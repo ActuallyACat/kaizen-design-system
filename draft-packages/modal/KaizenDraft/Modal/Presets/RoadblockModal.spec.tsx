@@ -1,6 +1,11 @@
 import { cleanup, render, fireEvent } from "@testing-library/react"
 import * as React from "react"
+import LottiePlayer from "lottie-react"
 import RoadblockModal, { RoadblockModalProps } from "./RoadblockModal"
+
+jest.mock("lottie-react", () => () => ({
+  default: () => <div></div>,
+}))
 
 afterEach(cleanup)
 

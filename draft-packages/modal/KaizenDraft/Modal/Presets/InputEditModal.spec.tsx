@@ -1,7 +1,9 @@
 import { cleanup, render, fireEvent } from "@testing-library/react"
 import * as React from "react"
 import InputEditModal, { InputEditModalProps } from "./InputEditModal"
-
+jest.mock("lottie-react", () => () => ({
+  default: () => <div></div>,
+}))
 afterEach(cleanup)
 
 const InputEditModalWrapper = (props: Partial<InputEditModalProps>) => (

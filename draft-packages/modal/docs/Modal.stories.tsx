@@ -318,6 +318,66 @@ InputEditPositive.story = {
   },
 }
 
+export const DemoInputModal = () => (
+  <ModalStateContainer isInitiallyOpen={isChromatic()}>
+    {({ open, close, isOpen }) => (
+      <div>
+        <Button label="Open modal" onClick={open} />
+        <InputEditModal
+          isOpen={isOpen}
+          type="positive"
+          title="Input-edit modal title"
+          onSubmit={close}
+          onDismiss={close}
+        >
+          <form>
+            <div style={{ textAlign: "center" }}>
+              <ModalAccessibleDescription>
+                <Paragraph variant="body">
+                  Instructive text to drive user selection goes here.
+                </Paragraph>
+              </ModalAccessibleDescription>
+              <Paragraph variant="body">
+                Instructive text to drive user selection goes here.
+              </Paragraph>
+            </div>
+            <div>
+              <TextField
+                id="email"
+                inputType="email"
+                inputValue="mackenzie@example.com"
+                labelText="Email"
+                placeholder="Please enter your email"
+                onChange={() => undefined}
+                icon={userIcon}
+              />
+              <TextField
+                id="password"
+                inputType="password"
+                inputValue="123445555"
+                labelText="Password"
+                placeholder="Please enter your password"
+                onChange={() => undefined}
+                icon={lockIcon}
+                inline
+              />
+            </div>
+          </form>
+        </InputEditModal>
+      </div>
+    )}
+  </ModalStateContainer>
+)
+
+DemoInputModal.story = {
+  name: "DEMO - Input-edit (positive)",
+  parameters: {
+    ...figmaEmbed(
+      "https://www.figma.com/file/GMxm8rvDCbj0Xw3TQWBZ8b/UI-Kit-Zen?node-id=1620%3A121"
+    ),
+  },
+}
+
 export const InputEditPositiveRtlLocale = () => (
   <ModalStateContainer isInitiallyOpen={isChromatic()}>
     {({ open, close, isOpen }) => (

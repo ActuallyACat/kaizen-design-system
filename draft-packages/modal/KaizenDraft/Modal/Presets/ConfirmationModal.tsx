@@ -1,15 +1,13 @@
 import classnames from "classnames"
 import * as React from "react"
-
 import { Heading } from "@kaizen/component-library"
+import { ButtonProps } from "@kaizen/draft-button"
 import {
   Cautionary,
   Informative,
   Negative,
   PositiveFemale,
 } from "@kaizen/draft-illustration"
-
-import { ButtonProps } from "@kaizen/draft-button"
 import {
   GenericModal,
   ModalAccessibleDescription,
@@ -36,19 +34,6 @@ export interface ConfirmationModalProps {
 
 type ConfirmationModal = React.FunctionComponent<ConfirmationModalProps>
 type ModalType = "positive" | "informative" | "negative" | "cautionary"
-
-const getIcon = (type: ModalType) => {
-  switch (type) {
-    case "cautionary":
-      return <Cautionary alt="" />
-    case "informative":
-      return <Informative alt="" />
-    case "negative":
-      return <Negative alt="" />
-    case "positive":
-      return <PositiveFemale alt="" />
-  }
-}
 
 const ConfirmationModal = ({
   isOpen,
@@ -84,6 +69,21 @@ const ConfirmationModal = ({
     disabled: !!confirmWorking,
   })
 
+  const getIllustration = (modalType: ModalType) => {
+    switch (modalType) {
+      case "positive":
+        return <PositiveFemale alt="" isAnimated loop={false} />
+      case "informative":
+        return <Informative alt="" isAnimated loop={false} />
+      case "negative":
+        return <Negative alt="" isAnimated loop={false} />
+      case "cautionary":
+        return <Cautionary alt="" isAnimated loop={false} />
+      default:
+        return <PositiveFemale alt="" isAnimated loop={false} />
+    }
+  }
+
   return (
     <GenericModal
       isOpen={isOpen}
@@ -102,7 +102,7 @@ const ConfirmationModal = ({
             })}
           >
             <div className={styles.iconContainer}>
-              <div className={styles.spotIcon}>{getIcon(type)}</div>
+              <div className={styles.spotIcon}>{getIllustration(type)}</div>
             </div>
             <ModalAccessibleLabel>
               <Heading tag="h1" variant="heading-1">

@@ -1,6 +1,9 @@
 import { cleanup, render, fireEvent } from "@testing-library/react"
 import * as React from "react"
 import InformationModal, { InformationModalProps } from "./InformationModal"
+jest.mock("lottie-react", () => () => ({
+  default: () => <div></div>,
+}))
 
 afterEach(cleanup)
 
