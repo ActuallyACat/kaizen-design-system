@@ -100,4 +100,25 @@ export const WithLongInitials = () => (
   </>
 )
 
+export const SideBySide = () => (
+  <>
+    <p>With real avatarSrc</p>
+    <Avatar
+      size="medium"
+      avatarSrc="https://www.cultureampcom-preview-1.usw2.wp-dev-us.cultureamp-cdn.com/assets/slices/main/assets/public/media/chapters-card-1@2x.05e547444387f29f14df0b82634bf2b6.png"
+      fullName="Jane Foster Doe"
+    />
+    <br />
+    <p>With broken avatarSrc</p>
+    <Avatar
+      size="medium"
+      avatarSrc="notarealpath.png"
+      fullName="Jane Foster Doe"
+    />
+    <br />
+    <p>With no avatarSrc</p>
+    <Avatar size="medium" fullName="Jane Foster Doe" />
+  </>
+)
+
 DefaultUser.storyName = "Default User (Shows when image fails to load)"
