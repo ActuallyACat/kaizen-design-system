@@ -1,6 +1,7 @@
 export { default as MultiActionTile } from "./KaizenDraft/Tile/MultiActionTile"
 export { default as InformationTile } from "./KaizenDraft/Tile/InformationTile"
 export { default as TileGrid, TileElement } from "./KaizenDraft/Tile/TileGrid"
+export * from "./KaizenDraft/Tile/TilePoc"
 
 export {
   TileAction,
