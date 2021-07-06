@@ -14,7 +14,7 @@ $small: $kz-var-spacing-md;
   font-size: $kz-var-typography-paragraph-small-font-size;
   font-weight: $kz-var-typography-paragraph-small-font-weight;
   letter-spacing: $kz-var-typography-paragraph-small-letter-spacing;
-  color: $kz-var-color-wisteria-800;
+  color: $kz-var-color-purple-800;
   display: inline-block;
   border: $kz-var-border-borderless-border-width
     $kz-var-border-borderless-border-style
@@ -54,24 +54,21 @@ $small: $kz-var-spacing-md;
   margin-right: -0.6625rem;
   margin-left: -0.225rem;
 
-  --dt-dismiss-icon-color-heart: rgba(
-    var(#{$kz-var-id-color-wisteria-800-rgb-params}),
-    0.7
-  );
+  --dt-dismiss-icon-color-heart: rgba(var(#{$kz-var-id-color-purple-800-rgb-params}), 0.7);
   $dt-dismiss-icon-color: var(
     --dt-dismiss-icon-color-heart,
-    $kz-var-color-wisteria-600
+    $kz-var-color-purple-600
   );
 
   color: $dt-dismiss-icon-color;
   cursor: pointer;
 
   &:hover {
-    color: var($kz-var-id-color-wisteria-800, $kz-var-color-wisteria-700);
+    color: var($kz-var-id-color-purple-800, $kz-var-color-purple-700);
   }
 
   &:active {
-    color: $kz-var-color-wisteria-800;
+    color: $kz-var-color-purple-800;
   }
 
   svg {
@@ -117,111 +114,111 @@ $small: $kz-var-spacing-md;
 }
 
 .default {
-  background-color: var($kz-var-id-color-ash, $kz-var-color-wisteria-200);
+  background-color: var($kz-var-id-color-neutral-300, $kz-var-color-purple-200);
 
   &.dismissible:hover {
-    border-color: var($kz-var-id-color-iron, $kz-var-color-wisteria-300);
+    border-color: var($kz-var-id-color-neutral-500, $kz-var-color-purple-300);
   }
 }
 
 .sentimentPositive {
-  background-color: $kz-var-color-seedling-100;
+  background-color: $kz-var-color-green-100;
 
   &.dismissible:hover {
-    border-color: $kz-var-color-seedling-200;
+    border-color: $kz-var-color-green-200;
   }
 }
 
 .sentimentNeutral {
-  background-color: $kz-var-color-ash;
+  background-color: $kz-var-color-neutral-300;
 
   &.dismissible:hover {
-    border-color: var($kz-var-id-color-iron, $kz-var-color-wisteria-300);
+    border-color: var($kz-var-id-color-neutral-500, $kz-var-color-purple-300);
   }
 }
 
 .sentimentNegative {
-  background-color: $kz-var-color-coral-100;
+  background-color: $kz-var-color-red-100;
 
   &.dismissible:hover {
-    border-color: $kz-var-color-coral-200;
+    border-color: $kz-var-color-red-200;
   }
 }
 
 .sentimentNone {
-  background-color: $kz-var-color-white;
-  border-color: var($kz-var-id-color-ash, $kz-var-color-wisteria-200);
+  background-color: $kz-var-color-neutral-100;
+  border-color: var($kz-var-id-color-neutral-300, $kz-var-color-purple-200);
 
   &.dismissible:hover {
-    border-color: var($kz-var-id-color-iron, $kz-var-color-wisteria-300);
+    border-color: var($kz-var-id-color-neutral-500, $kz-var-color-purple-300);
   }
 }
 
 .validationPositive {
-  background-color: $kz-var-color-seedling-100;
+  background-color: $kz-var-color-green-100;
 
   &.dismissible:hover {
-    border-color: $kz-var-color-seedling-200;
+    border-color: $kz-var-color-green-200;
   }
 
   .validationIcon {
-    color: $kz-var-color-seedling-300;
+    color: $kz-var-color-green-300;
   }
 }
 
 .validationInformative {
-  background-color: $kz-var-color-cluny-100;
+  background-color: $kz-var-color-blue-100;
 
   &.dismissible:hover {
-    border-color: $kz-var-color-cluny-300;
+    border-color: $kz-var-color-blue-300;
   }
 
   .validationIcon {
-    color: $kz-var-color-cluny-500;
+    color: $kz-var-color-blue-500;
   }
 }
 
 .validationNegative {
-  background-color: $kz-var-color-coral-100;
+  background-color: $kz-var-color-red-100;
 
   &.dismissible:hover {
-    border-color: $kz-var-color-coral-200;
+    border-color: $kz-var-color-red-200;
   }
 
   .validationIcon {
-    color: $kz-var-color-coral-500;
+    color: $kz-var-color-red-500;
   }
 }
 
 .validationCautionary {
-  background-color: $kz-var-color-yuzu-100;
+  background-color: $kz-var-color-yellow-100;
 
   &.dismissible:hover {
-    border-color: $kz-var-color-yuzu-300;
+    border-color: $kz-var-color-yellow-300;
   }
 
   .validationIcon {
-    color: $kz-var-color-yuzu-500;
+    color: $kz-var-color-yellow-500;
   }
 }
 
 .statusLive {
-  background-color: $kz-var-color-seedling-100;
-  color: $kz-var-color-wisteria-800;
+  background-color: $kz-var-color-green-100;
+  color: $kz-var-color-purple-800;
 }
 
 .statusDraft {
-  background-color: var($kz-var-id-color-peach-100, $kz-var-color-peach-200);
-  color: $kz-var-color-wisteria-800;
+  background-color: var($kz-var-id-color-orange-100, $kz-var-color-orange-200);
+  color: $kz-var-color-purple-800;
 }
 
 .statusClosed {
-  background-color: var($kz-var-id-color-coral-100, $kz-var-color-wisteria-200);
+  background-color: var($kz-var-id-color-red-100, $kz-var-color-purple-200);
 }
 
 .statusAction {
-  background-color: $kz-var-color-cluny-100;
-  color: $kz-var-color-wisteria-800;
+  background-color: $kz-var-color-blue-100;
+  color: $kz-var-color-purple-800;
 }
 
 $pulse-size-initial: 2px;
@@ -236,7 +233,7 @@ $pulse-size-after: $pulse-size-initial * $pulse-scale-factor;
   width: $pulse-size-initial;
   height: $pulse-size-initial;
   border-radius: 50%;
-  background-color: $kz-var-color-cluny-500;
+  background-color: $kz-var-color-blue-500;
   display: inline-block;
   position: relative;
   opacity: 0.5;
@@ -250,7 +247,7 @@ $pulse-size-after: $pulse-size-initial * $pulse-scale-factor;
   left: -($pulse-size-after / 2) + ($pulse-size-initial / 2);
   top: -($pulse-size-after / 2) + ($pulse-size-initial / 2);
   border-radius: 50%;
-  background-color: $kz-var-color-seedling-500;
+  background-color: $kz-var-color-green-500;
   animation: pulsate infinite 2.5s ease-out;
 }
 

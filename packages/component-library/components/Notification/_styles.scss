@@ -77,48 +77,48 @@ $ca-notification-slide-right: transform $ca-duration-fast ease-out;
   // Types
 
   &%ca-notification---affirmative {
-    background: $kz-var-color-seedling-100;
-    border-color: $kz-var-color-seedling-300;
-    color: $kz-var-color-wisteria-800;
+    background: $kz-var-color-green-100;
+    border-color: $kz-var-color-green-300;
+    color: $kz-var-color-purple-800;
 
     &%ca-notification---global {
-      background-color: $kz-var-color-seedling-200;
+      background-color: $kz-var-color-green-200;
     }
   }
 
   &%ca-notification---informative {
-    background: $kz-var-color-cluny-100;
-    border-color: $kz-var-color-cluny-300;
-    color: $kz-var-color-wisteria-800;
+    background: $kz-var-color-blue-100;
+    border-color: $kz-var-color-blue-300;
+    color: $kz-var-color-purple-800;
 
     &%ca-notification---global {
-      background-color: $kz-var-color-cluny-200;
+      background-color: $kz-var-color-blue-200;
     }
   }
 
   &%ca-notification---cautionary {
-    background: $kz-var-color-yuzu-100;
-    border-color: $kz-var-color-yuzu-400;
-    color: $kz-var-color-wisteria-800;
+    background: $kz-var-color-yellow-100;
+    border-color: $kz-var-color-yellow-400;
+    color: $kz-var-color-purple-800;
 
     &%ca-notification---global {
       // Yuzu200 for Heart theme, Yuzu300 for Zen theme. Switch not needed when Zen is removed.
       // Use Yuzu200 for Heart theme, and Yuzu300 for zen (the default fallback)
-      background-color: var($kz-var-id-color-yuzu-200, $kz-var-color-yuzu-300);
+      background-color: var($kz-var-id-color-yellow-200, $kz-var-color-yellow-300);
     }
   }
 
   &%ca-notification---negative {
-    background: $kz-var-color-coral-100;
-    border-color: $kz-var-color-coral-300;
-    color: $kz-var-color-wisteria-800;
+    background: $kz-var-color-red-100;
+    border-color: $kz-var-color-red-300;
+    color: $kz-var-color-purple-800;
 
     &%ca-notification---global {
       // Coral200 for Heart theme, Coral300 for Zen theme. Switch not needed when Zen is removed.
       // Use Coral 200 for Heart theme, and Coral 300 for zen (the default fallback)
       background-color: var(
-        $kz-var-id-color-coral-200,
-        $kz-var-color-coral-300
+        $kz-var-id-color-red-200,
+        $kz-var-color-red-300
       );
     }
   }
@@ -164,19 +164,19 @@ $ca-notification-slide-right: transform $ca-duration-fast ease-out;
   box-sizing: content-box;
 
   %ca-notification---affirmative & {
-    color: $kz-var-color-seedling-500;
+    color: $kz-var-color-green-500;
   }
 
   %ca-notification---informative & {
-    color: $kz-var-color-cluny-500;
+    color: $kz-var-color-blue-500;
   }
 
   %ca-notification---cautionary & {
-    color: $kz-var-color-yuzu-500;
+    color: $kz-var-color-yellow-500;
   }
 
   %ca-notification---negative & {
-    color: $kz-var-color-coral-500;
+    color: $kz-var-color-red-500;
   }
 
   %ca-notification---inline &,
@@ -196,20 +196,20 @@ $ca-notification-slide-right: transform $ca-duration-fast ease-out;
     border-radius: $kz-var-border-solid-border-radius;
 
     // Override the type-specific color values set above
-    color: $kz-var-color-white;
+    color: $kz-var-color-neutral-100;
   }
 
   %ca-notification---global%ca-notification---affirmative & {
-    background-color: $kz-var-color-seedling-500;
+    background-color: $kz-var-color-green-500;
   }
   %ca-notification---global%ca-notification---informative & {
-    background-color: $kz-var-color-cluny-500;
+    background-color: $kz-var-color-blue-500;
   }
   %ca-notification---global%ca-notification---cautionary & {
-    background-color: $kz-var-color-yuzu-500;
+    background-color: $kz-var-color-yellow-500;
   }
   %ca-notification---global%ca-notification---negative & {
-    background-color: $kz-var-color-coral-500;
+    background-color: $kz-var-color-red-500;
   }
 }
 
@@ -283,7 +283,7 @@ $ca-notification-slide-right: transform $ca-duration-fast ease-out;
 
     %ca-notification---global &,
     %ca-notification---global &:hover {
-      color: $kz-var-color-wisteria-800;
+      color: $kz-var-color-purple-800;
     }
   }
 
@@ -299,7 +299,7 @@ $ca-notification-slide-right: transform $ca-duration-fast ease-out;
 %ca-notification__cancel {
   @include button-reset;
   composes: interactiveIconWrapper from "../../Icon/Icon.module.scss";
-  color: $kz-var-color-wisteria-800;
+  color: $kz-var-color-purple-800;
   transform: none;
 
   &:active {

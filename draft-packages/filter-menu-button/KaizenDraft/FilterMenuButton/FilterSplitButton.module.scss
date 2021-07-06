@@ -26,12 +26,12 @@
   text-align: center;
   cursor: pointer;
   overflow: visible;
-  color: $kz-var-color-cluny-500;
-  background: $kz-var-color-cluny-100;
+  color: $kz-var-color-blue-500;
+  background: $kz-var-color-blue-100;
   border-color: $kz-var-border-borderless-border-color;
 
   &:hover {
-    background: $kz-var-color-cluny-200;
+    background: $kz-var-color-blue-200;
   }
 }
 
@@ -49,20 +49,20 @@
   border-bottom-left-radius: $kz-var-border-solid-border-radius;
 
   &:hover {
-    color: $kz-var-color-cluny-600;
+    color: $kz-var-color-blue-600;
   }
 }
 
 .primaryActionButton.splitButtonFocus {
   border: $kz-var-border-solid-border-width $kz-var-border-solid-border-style;
-  border-color: $kz-var-color-cluny-400;
+  border-color: $kz-var-color-blue-400;
   border-right-width: 0;
   border-radius: $kz-var-border-solid-border-radius;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 
   &:hover {
-    background: $kz-var-color-cluny-100;
+    background: $kz-var-color-blue-100;
   }
 }
 
@@ -71,7 +71,7 @@
   border-radius: $kz-var-border-solid-border-radius;
 
   &:hover {
-    background: $kz-var-color-cluny-100;
+    background: $kz-var-color-blue-100;
   }
 }
 
@@ -87,15 +87,15 @@
 
 .clearButton.splitButtonFocus {
   border: $kz-var-border-solid-border-width $kz-var-border-solid-border-style;
-  border-color: $kz-var-color-cluny-400;
+  border-color: $kz-var-color-blue-400;
   border-left-width: 0;
   border-radius: $kz-var-border-solid-border-radius;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 
   &:hover {
-    background: $kz-var-color-cluny-100;
-    color: $kz-var-color-cluny-500;
+    background: $kz-var-color-blue-100;
+    color: $kz-var-color-blue-500;
   }
 }
 
@@ -128,6 +128,6 @@
 // This is a temporary solution to mark an active state of the button
 // until it's decided whether this should be part of kaizen button or not
 .buttonActive {
-  border-color: $kz-var-color-cluny-400;
-  background: $kz-var-color-cluny-100;
+  border-color: $kz-var-color-blue-400;
+  background: $kz-var-color-blue-100;
 }

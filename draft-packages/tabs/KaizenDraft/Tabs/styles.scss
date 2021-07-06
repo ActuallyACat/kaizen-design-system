@@ -1,3 +1,4 @@
+@import "~@kaizen/design-tokens/sass/typography-vars";
 @import "~@kaizen/design-tokens/sass/color-vars";
 @import "~@kaizen/design-tokens/sass/border-vars";
 @import "~@kaizen/design-tokens/sass/spacing-vars";
@@ -17,15 +18,15 @@
   line-height: $kz-var-typography-heading-4-line-height;
   letter-spacing: $kz-var-typography-heading-4-letter-spacing;
   text-decoration: none;
-  color: $kz-var-color-wisteria-800;
+  color: $kz-var-color-purple-800;
   cursor: pointer;
   position: relative;
   transition: background-color 0.1s;
 
   &:hover {
-    color: $kz-var-color-cluny-500;
+    color: $kz-var-color-blue-500;
     text-decoration: none;
-    background-color: $kz-var-color-cluny-100;
+    background-color: $kz-var-color-blue-100;
     font-weight: $kz-var-typography-heading-4-font-weight;
   }
 
@@ -38,9 +39,9 @@
     }
 
     &:global(.focus-visible) {
-      color: $kz-var-color-cluny-500;
+      color: $kz-var-color-blue-500;
       text-decoration: none;
-      background-color: $kz-var-color-cluny-100;
+      background-color: $kz-var-color-blue-100;
       font-weight: $kz-var-typography-heading-4-font-weight;
 
       &:after {
@@ -52,7 +53,7 @@
         );
         border-width: $kz-var-border-focus-ring-border-width;
         border-style: $kz-var-border-focus-ring-border-style;
-        border-color: $kz-var-color-cluny-500;
+        border-color: $kz-var-color-blue-500;
         top: calc(-1 * #{$focus-ring-offset});
         left: calc(-1 * #{$focus-ring-offset});
         right: calc(-1 * #{$focus-ring-offset});
@@ -88,7 +89,7 @@
   composes: tab;
   composes: horizontalTab;
   font-weight: $kz-var-typography-heading-4-font-weight;
-  color: $kz-var-color-cluny-500;
+  color: $kz-var-color-blue-500;
 
   &::before {
     $underline-height: 5px;
@@ -118,7 +119,7 @@
   }
 
   &:hover:not(.horizontalTabActive) {
-    color: $kz-var-color-wisteria-800;
+    color: $kz-var-color-purple-800;
     background-color: transparent;
   }
 }
@@ -153,7 +154,7 @@
 .verticalTabActive {
   composes: tab;
   composes: verticalTab;
-  color: $kz-var-color-cluny-500;
+  color: $kz-var-color-blue-500;
 }
 
 .verticalTabDisabled {
@@ -167,7 +168,7 @@
   }
 
   &:hover:not(.verticalTabActive) {
-    color: $kz-var-color-wisteria-800;
+    color: $kz-var-color-purple-800;
     background-color: transparent;
   }
 }

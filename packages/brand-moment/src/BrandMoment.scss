@@ -16,15 +16,15 @@ $breakpoint-xl: 1366px; // TODO: create an xl breakpoint in design-tokens and re
   align-items: center;
 
   &.informative {
-    background: $kz-var-color-cluny-100;
+    background: $kz-var-color-blue-100;
   }
 
   &.positive {
-    background: $kz-var-color-seedling-100;
+    background: $kz-var-color-green-100;
   }
 
   &.negative {
-    background: $kz-var-color-coral-100;
+    background: $kz-var-color-red-100;
   }
 }
 
@@ -147,8 +147,8 @@ $breakpoint-xl: 1366px; // TODO: create an xl breakpoint in design-tokens and re
 .footerInner {
   display: flex;
   flex-direction: column;
-  border-block-start: 1px solid $kz-var-color-wisteria-800;
-  border-inline-start: 1px solid $kz-var-color-wisteria-800;
+  border-block-start: 1px solid $kz-var-color-purple-800;
+  border-inline-start: 1px solid $kz-var-color-purple-800;
   padding: $kz-var-spacing-sm $kz-var-spacing-md;
   margin-block-end: $kz-var-spacing-lg;
 }

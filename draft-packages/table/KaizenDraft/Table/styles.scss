@@ -14,7 +14,7 @@ $row-height-data-variant: 48px;
 
 .anchorReset {
   text-decoration: none;
-  color: $kz-var-color-wisteria-800;
+  color: $kz-var-color-purple-800;
   display: block;
   &:hover,
   &:active,
@@ -23,7 +23,7 @@ $row-height-data-variant: 48px;
   }
 
   &.headerRowCellButtonReversed {
-    color: $kz-var-color-white;
+    color: $kz-var-color-neutral-100;
   }
 }
 
@@ -101,23 +101,23 @@ $row-height-data-variant: 48px;
 }
 
 .headerRowCellTooltipIcon {
-  color: $kz-var-color-cluny-500;
+  color: $kz-var-color-blue-500;
   margin-right: $kz-var-spacing-xs;
 }
 
 .headerRowCellIcon {
-  color: $kz-var-color-wisteria-500;
+  color: $kz-var-color-purple-500;
   height: 20px;
 
   .headerRowCellActive & {
-    color: $kz-var-color-wisteria-800;
+    color: $kz-var-color-purple-800;
   }
 }
 
 .card {
   @include button-reset;
-  background: $kz-var-color-white;
-  border: solid 1px rgba($kz-var-color-wisteria-700-rgb-params, 0.1);
+  background: $kz-var-color-neutral-100;
+  border: solid 1px rgba($kz-var-color-purple-700-rgb-params, 0.1);
   transition: box-shadow $kz-var-animation-duration-rapid,
     border-color $kz-var-animation-duration-rapid,
     margin $kz-var-animation-duration-rapid,
@@ -170,7 +170,7 @@ $row-height-data-variant: 48px;
   border-color: $kz-var-border-borderless-border-color;
   box-shadow: none;
   border-radius: $kz-var-border-solid-border-radius;
-  background-color: $kz-var-color-ash;
+  background-color: $kz-var-color-neutral-300;
   margin-bottom: $kz-var-spacing-sm;
 }
 
@@ -181,10 +181,7 @@ $row-height-data-variant: 48px;
 .expanded {
   // We want to have NO background on Heart theme (when CSS variables are defined), but keep stone backgrond on Zen. Need to do this using 0 opacity.
   // We also only want this switch for the expanded state. Non-expanded hovering will resort to stone background, as seen in .hasHoverState
-  --dt-hover-background-heart: rgba(
-    var(#{$kz-var-id-color-white-rgb-params}),
-    0
-  );
+  --dt-hover-background-heart: rgba(var(#{$kz-var-id-color-neutral-100-rgb-params}), 0);
 
   position: relative;
   z-index: 1;
@@ -204,7 +201,7 @@ $row-height-data-variant: 48px;
   }
 
   &:hover {
-    background-color: var(--dt-hover-background-heart, $kz-var-color-stone);
+    background-color: var(--dt-hover-background-heart, $kz-var-color-neutral-200);
   }
 }
 

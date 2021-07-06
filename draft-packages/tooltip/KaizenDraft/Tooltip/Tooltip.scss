@@ -12,8 +12,8 @@ $arrow-width: 20px;
 
 // Ash for Heart theme, Wisteria200 for Zen. Switching not needed when Zen is removed.
 $dt-tooltip-content-border: var(
-  $kz-var-id-color-ash,
-  $kz-var-color-wisteria-200
+  $kz-var-id-color-neutral-300,
+  $kz-var-color-purple-200
 );
 
 .tooltip {
@@ -37,7 +37,7 @@ $dt-tooltip-content-border: var(
   min-width: 200px;
   @include kz-typography-paragraph-body($size: 14);
   top: initial; // Overrides the `top` value of kz-typography-paragraph-body
-  color: $kz-var-color-wisteria-800;
+  color: $kz-var-color-purple-800;
   background-color: white;
 }
 
@@ -91,7 +91,7 @@ $dt-tooltip-content-border: var(
 // Triangle portion is a little darker to bring out shadow
 .arrowShadow::after {
   border-top: $arrow-height solid
-    rgba($kz-var-color-wisteria-800-rgb-params, 0.09);
+    rgba($kz-var-color-purple-800-rgb-params, 0.09);
   margin-top: 1px;
   filter: blur(4px);
 }

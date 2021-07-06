@@ -49,7 +49,7 @@ $tab-container-height-medium-and-small-collapsed: $ca-grid * 0.75;
 }
 
 .adminVariant .titleRow {
-  background-color: $kz-var-color-white;
+  background-color: $kz-var-color-neutral-100;
 }
 
 %titleBlockInner {
@@ -81,10 +81,10 @@ $tab-container-height-medium-and-small-collapsed: $ca-grid * 0.75;
   height: $ca-grid * 3.5;
   justify-content: space-between;
   border-bottom: $title-block-separator-height solid
-    rgba($kz-var-color-white-rgb-params, 0.1);
+    rgba($kz-var-color-neutral-100-rgb-params, 0.1);
 
   .educationVariant & {
-    border-bottom-color: rgba($kz-var-color-wisteria-700-rgb-params, 0.2);
+    border-bottom-color: rgba($kz-var-color-purple-700-rgb-params, 0.2);
   }
 
   .adminVariant & {
@@ -211,7 +211,7 @@ $tab-container-height-medium-and-small-collapsed: $ca-grid * 0.75;
 .avatar {
   display: none;
   box-sizing: border-box;
-  border: 3px solid $kz-var-color-white;
+  border: 3px solid $kz-var-color-neutral-100;
   border-radius: 50%;
   overflow: hidden;
   height: $ca-grid * 2;
@@ -234,7 +234,7 @@ $tab-container-height-medium-and-small-collapsed: $ca-grid * 0.75;
 .hamburger {
   display: none;
   @include ca-margin($end: $ca-grid * 2/3);
-  color: $kz-var-color-white;
+  color: $kz-var-color-neutral-100;
 
   &:hover {
     cursor: pointer;
@@ -242,7 +242,7 @@ $tab-container-height-medium-and-small-collapsed: $ca-grid * 0.75;
 
   .educationVariant &,
   .adminVariant & {
-    color: $kz-var-color-wisteria-800;
+    color: $kz-var-color-purple-800;
   }
 
   @include title-block-medium-and-small {
@@ -271,7 +271,7 @@ $tab-container-height-medium-and-small-collapsed: $ca-grid * 0.75;
 .subtitle {
   display: flex;
   align-items: center;
-  color: $kz-var-color-white;
+  color: $kz-var-color-neutral-100;
   font-family: $kz-var-typography-paragraph-small-font-family;
   font-weight: $kz-var-typography-paragraph-small-font-weight;
   font-size: $kz-var-typography-paragraph-small-font-size;
@@ -280,7 +280,7 @@ $tab-container-height-medium-and-small-collapsed: $ca-grid * 0.75;
   max-width: 230px;
 
   .adminVariant & {
-    color: $kz-var-color-wisteria-800;
+    color: $kz-var-color-purple-800;
   }
 
   @include ca-margin($start: $ca-grid / 2);
@@ -354,7 +354,7 @@ $tab-container-height-medium-and-small-collapsed: $ca-grid * 0.75;
     margin-top: $ca-grid / 4;
   }
 
-  color: $kz-var-color-white;
+  color: $kz-var-color-neutral-100;
   max-width: 780px;
   font-family: $kz-var-typography-paragraph-small-font-family;
   font-weight: $kz-var-typography-paragraph-small-font-weight;
@@ -363,7 +363,7 @@ $tab-container-height-medium-and-small-collapsed: $ca-grid * 0.75;
   letter-spacing: $kz-var-typography-paragraph-small-letter-spacing;
 
   &.dark {
-    color: rgba($kz-var-color-wisteria-800-rgb-params, 0.7);
+    color: rgba($kz-var-color-purple-800-rgb-params, 0.7);
   }
 }
 
@@ -461,8 +461,8 @@ $tab-container-height-medium-and-small-collapsed: $ca-grid * 0.75;
     height: $tab-container-height-small;
     background: linear-gradient(
       0,
-      $kz-var-color-wisteria-700,
-      rgba($kz-var-color-wisteria-700-rgb-params, 0)
+      $kz-var-color-purple-700,
+      rgba($kz-var-color-purple-700-rgb-params, 0)
     );
     z-index: $ca-z-index-sticky;
   }
@@ -471,8 +471,8 @@ $tab-container-height-medium-and-small-collapsed: $ca-grid * 0.75;
     @include title-block-small {
       background: linear-gradient(
         0,
-        $kz-var-color-stone,
-        rgba($kz-var-color-stone-rgb-params, 0)
+        $kz-var-color-neutral-200,
+        rgba($kz-var-color-neutral-200-rgb-params, 0)
       );
     }
   }
@@ -481,8 +481,8 @@ $tab-container-height-medium-and-small-collapsed: $ca-grid * 0.75;
     @include title-block-small {
       background: linear-gradient(
         0,
-        $kz-var-color-cluny-200,
-        rgba($kz-var-color-cluny-200-rgb-params, 0)
+        $kz-var-color-blue-200,
+        rgba($kz-var-color-blue-200-rgb-params, 0)
       );
     }
   }
@@ -526,7 +526,7 @@ $tab-container-height-medium-and-small-collapsed: $ca-grid * 0.75;
   // to be Cluny like the default secondary buttons
   .educationVariant &,
   .adminVariant & {
-    color: $kz-var-color-cluny-500;
+    color: $kz-var-color-blue-500;
   }
 
   @include title-block-medium-and-small {
@@ -620,10 +620,10 @@ $tab-container-height-medium-and-small-collapsed: $ca-grid * 0.75;
 
 .breadcrumb,
 .breadcrumbText {
-  color: $kz-var-color-white;
+  color: $kz-var-color-neutral-100;
   .educationVariant &,
   .adminVariant & {
-    color: $kz-var-color-wisteria-800;
+    color: $kz-var-color-purple-800;
   }
 }
 
@@ -633,8 +633,8 @@ $tab-container-height-medium-and-small-collapsed: $ca-grid * 0.75;
   box-sizing: border-box;
   width: $breadcrumb-circle-width;
   height: $breadcrumb-circle-width;
-  color: $kz-var-color-white;
-  border-color: rgba($kz-var-color-white-rgb-params, 0.5);
+  color: $kz-var-color-neutral-100;
+  border-color: rgba($kz-var-color-neutral-100-rgb-params, 0.5);
   border-width: 2px;
   border-radius: 50%;
   border-style: solid;
@@ -646,15 +646,15 @@ $tab-container-height-medium-and-small-collapsed: $ca-grid * 0.75;
   .breadcrumb:hover &,
   .breadcrumb:focus & {
     transform: scale(1.1);
-    border-color: $kz-var-color-white;
-    color: $kz-var-color-white;
-    background-color: rgba($kz-var-color-white-rgb-params, 0.1);
+    border-color: $kz-var-color-neutral-100;
+    color: $kz-var-color-neutral-100;
+    background-color: rgba($kz-var-color-neutral-100-rgb-params, 0.1);
   }
 
   .educationVariant &,
   .adminVariant & {
-    color: $kz-var-color-cluny-500;
-    border-color: $kz-var-color-cluny-300;
+    color: $kz-var-color-blue-500;
+    border-color: $kz-var-color-blue-300;
     border-width: $border-width;
   }
 
@@ -662,9 +662,9 @@ $tab-container-height-medium-and-small-collapsed: $ca-grid * 0.75;
   .educationVariant .breadcrumb:focus &,
   .adminVariant .breadcrumb:hover &,
   .adminVariant .breadcrumb:focus & {
-    border-color: $kz-var-color-cluny-500;
-    color: $kz-var-color-cluny-500;
-    background-color: rgba($kz-var-color-cluny-500-rgb-params, 0.1);
+    border-color: $kz-var-color-blue-500;
+    color: $kz-var-color-blue-500;
+    background-color: rgba($kz-var-color-blue-500-rgb-params, 0.1);
   }
 }
 

@@ -7,7 +7,7 @@
 
 $heading-active-color: #f2f2f3;
 // ^This is just a temporary hex to get us by for now until we rearrange our neutrals and introduce something that can used here.
-$border-color: rgba($kz-var-color-slate-rgb-params, 0.2);
+$border-color: rgba($kz-var-color-neutral-600-rgb-params, 0.2);
 
 // We need a full border radius on this container element, then have classes
 // beneath to toggle nested borders off and on for different use cases.

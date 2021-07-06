@@ -1,7 +1,6 @@
 @import "~@kaizen/design-tokens/sass/border-vars";
 @import "~@kaizen/design-tokens/sass/color-vars";
 @import "~@kaizen/design-tokens/sass/spacing-vars";
-@import "~@kaizen/design-tokens/sass/typography-vars";
 @import "~@kaizen/draft-form/KaizenDraft/Form/Primitives/Input/styles.scss";
 @import "~@kaizen/draft-button/KaizenDraft/Button/styles";
 @import "~@kaizen/component-library/styles/layers";
@@ -10,7 +9,7 @@
 
 .container {
   -webkit-font-smoothing: antialiased;
-  color: $kz-var-color-wisteria-800;
+  color: $kz-var-color-purple-800;
   width: 100%;
   position: relative;
 
@@ -23,8 +22,8 @@
 .button {
   @include button-reset;
   @include ca-padding($start: $kz-var-spacing-sm, $end: $kz-var-spacing-sm);
-  background-color: $kz-var-color-white;
-  color: $kz-var-color-wisteria-800;
+  background-color: $kz-var-color-neutral-100;
+  color: $kz-var-color-purple-800;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,7 +36,7 @@
   &:hover:not(:disabled),
   &:focus:not(:disabled) {
     .chevron {
-      color: $kz-var-color-wisteria-500;
+      color: $kz-var-color-purple-500;
     }
   }
 
@@ -71,7 +70,7 @@
 }
 
 .indicators {
-  color: $kz-var-color-wisteria-300;
+  color: $kz-var-color-purple-300;
   display: flex;
 }
 
@@ -82,7 +81,7 @@
 
 .clear {
   &:hover:not([aria-disabled="true"]) {
-    color: $kz-var-color-wisteria-500;
+    color: $kz-var-color-purple-500;
   }
 
   :global(.js-focus-visible) & {
@@ -92,7 +91,7 @@
 
     &:global(.focus-visible) {
       outline: $kz-var-border-focus-ring-border-width
-        $kz-var-border-focus-ring-border-style $kz-var-color-cluny-500;
+        $kz-var-border-focus-ring-border-style $kz-var-color-blue-500;
     }
   }
 }

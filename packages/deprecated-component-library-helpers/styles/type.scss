@@ -1,5 +1,4 @@
 @import "~@kaizen/design-tokens/sass/color-vars";
-@import "~@kaizen/design-tokens/sass/color";
 @import "~@kaizen/design-tokens/sass/spacing-vars";
 @import "~@kaizen/design-tokens/sass/typography-vars";
 @import "~@kaizen/design-tokens/sass/typography";
@@ -247,7 +246,7 @@ $ca-locale-ar-font-family: $ca-inter-locale-he-font-family;
   @include ca-type-ideal($size: $size, $weight: $ca-weight-book, $args...);
   text-decoration: none;
   text-decoration-skip-ink: auto;
-  color: $kz-var-color-cluny-500;
+  color: $kz-var-color-blue-500;
   cursor: pointer;
   &:hover {
     text-decoration: underline;
@@ -360,7 +359,7 @@ $ca-locale-ar-font-family: $ca-inter-locale-he-font-family;
   @include ca-type-inter($size: $size, $weight: 500, $args...);
   text-decoration: none;
   text-decoration-skip-ink: auto;
-  color: $kz-var-color-cluny-500;
+  color: $kz-var-color-blue-500;
   cursor: pointer;
   &:hover {
     text-decoration: underline;
@@ -684,7 +683,7 @@ $ca-locale-ar-font-family: $ca-inter-locale-he-font-family;
   );
   text-decoration: none;
   text-decoration-skip-ink: auto;
-  color: $kz-var-color-cluny-500;
+  color: $kz-var-color-blue-500;
   cursor: pointer;
   &:hover {
     text-decoration: underline;

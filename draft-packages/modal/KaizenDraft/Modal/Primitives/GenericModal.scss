@@ -42,13 +42,13 @@
 
 .genericModal {
   margin: auto;
-  background-color: $kz-var-color-white;
+  background-color: $kz-var-color-neutral-100;
   border-radius: $kz-var-border-solid-border-radius;
   box-shadow: $kz-var-shadow-large-box-shadow;
   position: relative;
   width: 90%;
   -webkit-font-smoothing: antialiased;
-  color: $kz-var-color-wisteria-800;
+  color: $kz-var-color-purple-800;
 
   @include ca-media-tablet-and-up {
     width: 100%;

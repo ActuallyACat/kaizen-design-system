@@ -11,7 +11,7 @@ $small: $ca-grid;
 .badge {
   @include ca-inherit-baseline;
   border-radius: $kz-var-spacing-sm;
-  color: $kz-var-color-wisteria-800;
+  color: $kz-var-color-purple-800;
   display: inline-block;
   position: relative;
   font-family: $kz-var-typography-paragraph-extra-small-font-family;
@@ -26,28 +26,28 @@ $small: $ca-grid;
 
 .default {
   background-color: $dt-color-background-default;
-  color: $kz-var-color-wisteria-800;
+  color: $kz-var-color-purple-800;
 }
 
 .reversed.active,
 .active {
-  background-color: $kz-var-color-cluny-500;
-  color: $kz-var-color-white;
+  background-color: $kz-var-color-blue-500;
+  color: $kz-var-color-neutral-100;
 }
 
 .dark {
-  background-color: rgba($kz-var-color-wisteria-700-rgb-params, 0.1);
-  color: $kz-var-color-wisteria-800;
+  background-color: rgba($kz-var-color-purple-700-rgb-params, 0.1);
+  color: $kz-var-color-purple-800;
 }
 
 .reversed.dark {
-  background-color: $kz-var-color-wisteria-700;
-  color: $kz-var-color-white;
+  background-color: $kz-var-color-purple-700;
+  color: $kz-var-color-neutral-100;
 }
 
 .reversed {
-  background-color: rgba($kz-var-color-white-rgb-params, 0.1);
-  color: $kz-var-color-white;
+  background-color: rgba($kz-var-color-neutral-100-rgb-params, 0.1);
+  color: $kz-var-color-neutral-100;
 }
 
 $badge-duration-timing: ($kz-var-animation-duration-slow / 2)
@@ -66,7 +66,7 @@ $badge-transition: transform $badge-duration-timing,
   &.animationOn .badge {
     transform: scale3d(1.35, 1.35, 1.35);
     &.dark {
-      background-color: rgba($kz-var-color-wisteria-700-rgb-params, 0.2);
+      background-color: rgba($kz-var-color-purple-700-rgb-params, 0.2);
     }
   }
 }

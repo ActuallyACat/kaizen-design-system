@@ -19,7 +19,7 @@ $menu-footer-height: 100px;
   top: 0;
   left: 0;
   transform: translate3d(-120%, 0, 0);
-  background-color: $kz-var-color-wisteria-800;
+  background-color: $kz-var-color-purple-800;
   transition: transform $ca-duration-fast $ca-ease-out;
   box-shadow: $kz-var-shadow-small-box-shadow;
 }
@@ -36,13 +36,13 @@ $menu-footer-height: 100px;
   position: absolute;
   top: $ca-grid;
   left: $ca-grid / 2;
-  color: $kz-var-color-cluny-500;
+  color: $kz-var-color-blue-500;
 }
 
 .hamburger {
   width: $hamburger-width;
   height: $hamburger-layer-height;
-  background-color: $kz-var-color-cluny-500;
+  background-color: $kz-var-color-blue-500;
   position: relative;
   display: block;
 
@@ -53,7 +53,7 @@ $menu-footer-height: 100px;
     position: absolute;
     top: $hamburger-layer-height + $hamburger-layer-spacing;
     left: 0;
-    background-color: $kz-var-color-cluny-500;
+    background-color: $kz-var-color-blue-500;
   }
 
   &::after {
@@ -63,7 +63,7 @@ $menu-footer-height: 100px;
     position: absolute;
     top: ($hamburger-layer-height + $hamburger-layer-spacing) * 2;
     left: 0;
-    background-color: $kz-var-color-cluny-500;
+    background-color: $kz-var-color-blue-500;
   }
 }
 

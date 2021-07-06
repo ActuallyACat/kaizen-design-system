@@ -5,7 +5,7 @@
 // Use different tokens with different opacities across the Zen and Heart themes, by assuming that when Zen is applied there won't be any CSS variables declared.
 
 $dt-content-border-color: rgba(
-  var($kz-var-id-color-slate-rgb-params, $kz-var-color-wisteria-700-rgb-params),
+  var($kz-var-id-color-neutral-600-rgb-params, $kz-var-color-purple-700-rgb-params),
   0.1
 );
 
@@ -24,19 +24,13 @@ $dt-content-border-color: rgba(
   border-color: $dt-content-border-color;
 
   &.reversed {
-    border-color: rgba($kz-var-color-white-rgb-params, 0.1);
+    border-color: rgba($kz-var-color-neutral-100-rgb-params, 0.1);
   }
 }
 
 .canvas {
-  --dt-canvas-border-color-zen: rgba(
-    #{$kz-var-color-wisteria-700-rgb-params},
-    0.2
-  );
-  --dt-canvas-border-color-heart: rgba(
-    var(#{$kz-var-id-color-slate-rgb-params}),
-    0.1
-  );
+  --dt-canvas-border-color-zen: rgba(#{$kz-var-color-purple-700-rgb-params}, 0.2);
+  --dt-canvas-border-color-heart: rgba(var(#{$kz-var-id-color-neutral-600-rgb-params}), 0.1);
   --dt-canvas-border-color: var(
     --dt-canvas-border-color-heart,
     var(--dt-canvas-border-color-zen)
@@ -47,7 +41,7 @@ $dt-content-border-color: rgba(
   border-color: var(--dt-canvas-border-color);
 
   &.reversed {
-    border-color: rgba($kz-var-color-white-rgb-params, 0.1);
+    border-color: rgba($kz-var-color-neutral-100-rgb-params, 0.1);
   }
 }
 

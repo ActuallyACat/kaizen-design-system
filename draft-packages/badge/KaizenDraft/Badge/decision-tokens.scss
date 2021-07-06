@@ -4,6 +4,6 @@
 // if $kz-var-id-color-ash fails, the CSS property does not exist so assume a Zen theme
 // and fall back to $kz-var-color-wisteria-200 (which has a Zen fallback value included)
 $dt-color-background-default: var(
-  $kz-var-id-color-ash,
-  $kz-var-color-wisteria-200
+  $kz-var-id-color-neutral-300,
+  $kz-var-color-purple-200
 );

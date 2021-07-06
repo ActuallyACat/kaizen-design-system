@@ -40,13 +40,13 @@ $animation-timing: $ca-duration-immediate $ca-linear;
   .checkbox:not([disabled]) + &:hover {
     // if kz-color-iron-500-rgb-params fails, it will fallback to wisteria-500
     // (the non-css variable token)
-    background-color: $kz-var-color-wisteria-500;
-    background-color: rgba($kz-var-color-iron-rgb-params, 0.4);
+    background-color: $kz-var-color-purple-500;
+    background-color: rgba($kz-var-color-neutral-500-rgb-params, 0.4);
   }
 }
 
 .thumb {
-  background-color: $kz-var-color-white;
+  background-color: $kz-var-color-neutral-100;
   border: $kz-var-border-borderless-border-width
     $kz-var-border-borderless-border-style
     $kz-var-border-borderless-border-color;
@@ -60,7 +60,7 @@ $animation-timing: $ca-duration-immediate $ca-linear;
 .on {
   .checkbox:not([disabled]) + .track {
     border-color: $kz-var-border-borderless-border-color;
-    background-color: $kz-var-color-seedling-400;
+    background-color: $kz-var-color-green-400;
   }
 
   .checkbox:focus:not([disabled]) + .track {
@@ -73,7 +73,7 @@ $animation-timing: $ca-duration-immediate $ca-linear;
   }
 
   .checkbox:not([disabled]) + .track:hover {
-    background-color: $kz-var-color-seedling-500;
+    background-color: $kz-var-color-green-500;
   }
 }
 

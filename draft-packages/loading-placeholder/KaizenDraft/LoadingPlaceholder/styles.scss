@@ -1,3 +1,4 @@
+@import "~@kaizen/design-tokens/sass/variable-identifiers";
 @import "~@kaizen/design-tokens/sass/color-vars";
 @import "~@kaizen/design-tokens/sass/border-vars";
 @import "~@kaizen/design-tokens/sass/animation-vars";
@@ -45,7 +46,7 @@
 }
 
 .reversedOcean {
-  background-color: var($kz-var-id-color-cluny-200, $kz-var-color-cluny-300);
+  background-color: var($kz-var-id-color-blue-200, $kz-var-color-blue-300);
 }
 
 .normal {

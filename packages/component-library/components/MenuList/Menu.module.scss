@@ -13,7 +13,7 @@ $side-padding: 3/4 * $ca-grid;
 .menuList {
   background: white;
   border: $kz-var-border-solid-border-width $kz-var-border-solid-border-style
-    $kz-var-color-wisteria-200;
+    $kz-var-color-purple-200;
   box-shadow: $kz-var-shadow-small-box-shadow;
   line-height: 40px;
 }
@@ -21,7 +21,7 @@ $side-padding: 3/4 * $ca-grid;
 .header {
   padding: 10px $side-padding;
   text-align: left;
-  color: rgba($kz-var-color-wisteria-800-rgb-params, 0.4);
+  color: rgba($kz-var-color-purple-800-rgb-params, 0.4);
   border-bottom: $ca-border-color 1px solid;
 }
 
@@ -36,7 +36,7 @@ $side-padding: 3/4 * $ca-grid;
   @include ca-inherit-baseline;
   composes: interactiveIconWrapper from "../Icon/Icon.module.scss";
   background: transparent;
-  color: $kz-var-color-wisteria-800;
+  color: $kz-var-color-purple-800;
   cursor: pointer;
   text-align: left;
 
@@ -55,13 +55,13 @@ $side-padding: 3/4 * $ca-grid;
   &.menuItem--active,
   &:hover,
   &:focus {
-    background: $kz-var-color-stone;
-    color: $kz-var-color-cluny-500;
+    background: $kz-var-color-neutral-200;
+    color: $kz-var-color-blue-500;
     // override Murmur global styles :(
     text-decoration: none;
 
     .menuItem__Icon {
-      color: $kz-var-color-cluny-500;
+      color: $kz-var-color-blue-500;
     }
   }
 }
@@ -71,9 +71,9 @@ $side-padding: 3/4 * $ca-grid;
 }
 
 .menuItem--destructive {
-  color: $kz-var-color-coral-600;
+  color: $kz-var-color-red-600;
   .menuItem__Icon {
-    color: $kz-var-color-coral-600;
+    color: $kz-var-color-red-600;
   }
 }
 
@@ -87,7 +87,7 @@ $side-padding: 3/4 * $ca-grid;
 
 .menuItem__Icon {
   text-align: right;
-  color: $kz-var-color-wisteria-800;
+  color: $kz-var-color-purple-800;
   position: relative;
   top: 3px;
 
@@ -105,7 +105,7 @@ $side-padding: 3/4 * $ca-grid;
   height: 1px;
   width: 100%;
   border: 0;
-  background: $kz-var-color-wisteria-200;
+  background: $kz-var-color-purple-200;
   visibility: visible;
   margin: 5px 0;
 }

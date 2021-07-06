@@ -66,40 +66,40 @@
 }
 
 .dark {
-  color: $kz-var-color-wisteria-800;
+  color: $kz-var-color-purple-800;
   opacity: 1;
 }
 
 .dark-reduced-opacity {
-  color: $kz-var-color-wisteria-800;
+  color: $kz-var-color-purple-800;
   opacity: 0.7;
 }
 
 .white {
-  color: $kz-var-color-white;
+  color: $kz-var-color-neutral-100;
   opacity: 1;
 }
 
 .white-reduced-opacity {
-  color: $kz-var-color-white;
+  color: $kz-var-color-neutral-100;
   opacity: 0.8;
 }
 
 .positive {
   &.small {
-    color: $kz-var-color-seedling-600;
+    color: $kz-var-color-green-600;
   }
   &.large {
-    color: $kz-var-color-seedling-500;
+    color: $kz-var-color-green-500;
   }
 }
 
 .negative {
   &.small {
-    color: $kz-var-color-coral-600;
+    color: $kz-var-color-red-600;
   }
 
   &.large {
-    color: $kz-var-color-coral-500;
+    color: $kz-var-color-red-500;
   }
 }

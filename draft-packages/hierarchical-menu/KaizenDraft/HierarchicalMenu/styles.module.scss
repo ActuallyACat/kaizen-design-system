@@ -41,8 +41,8 @@ $delay-before-showing-loading-placeholders: 500ms;
 }
 
 .header {
-  background-color: $kz-var-color-wisteria-700;
-  color: $kz-var-color-wisteria-200;
+  background-color: $kz-var-color-purple-700;
+  color: $kz-var-color-purple-200;
 }
 
 .parent {
@@ -51,7 +51,7 @@ $delay-before-showing-loading-placeholders: 500ms;
     $kz-var-border-borderless-border-style
     $kz-var-border-borderless-border-color;
   border-bottom-width: 1px;
-  border-bottom-color: $kz-var-color-wisteria-500;
+  border-bottom-color: $kz-var-color-purple-500;
   height: $option-height;
   display: flex;
   align-items: center;
@@ -72,7 +72,7 @@ $delay-before-showing-loading-placeholders: 500ms;
 
     &:global(.focus-visible) {
       outline: $kz-var-border-focus-ring-border-width
-        $kz-var-border-focus-ring-border-style $kz-var-color-cluny-300;
+        $kz-var-border-focus-ring-border-style $kz-var-color-blue-300;
     }
   }
 }
@@ -118,15 +118,15 @@ $delay-before-showing-loading-placeholders: 500ms;
 
     &:global(.focus-visible) {
       outline: $kz-var-border-focus-ring-border-width
-        $kz-var-border-focus-ring-border-style $kz-var-color-cluny-300;
+        $kz-var-border-focus-ring-border-style $kz-var-color-blue-300;
     }
   }
 }
 
 .body {
   @include ca-margin($end: 4px);
-  background-color: $kz-var-color-white;
-  color: $kz-var-color-wisteria-800;
+  background-color: $kz-var-color-neutral-100;
+  color: $kz-var-color-purple-800;
   max-height: calc(#{$option-height} * #{$max-visible-options});
   overflow-y: auto;
 }
@@ -159,7 +159,7 @@ $delay-before-showing-loading-placeholders: 500ms;
     }
 
     &:global(.focus-visible) {
-      border-color: $kz-var-color-cluny-500;
+      border-color: $kz-var-color-blue-500;
     }
   }
 }
@@ -190,7 +190,7 @@ $delay-before-showing-loading-placeholders: 500ms;
     }
 
     &:global(.focus-visible) {
-      border-color: $kz-var-color-cluny-500;
+      border-color: $kz-var-color-blue-500;
     }
   }
 }
@@ -202,12 +202,12 @@ $delay-before-showing-loading-placeholders: 500ms;
 
 .keyboardHighlightedChild {
   composes: child;
-  background-color: $kz-var-color-wisteria-100;
+  background-color: $kz-var-color-purple-100;
 }
 
 .childLabelButton:hover,
 .childDrilldownButton:hover {
-  background-color: $kz-var-color-wisteria-100;
+  background-color: $kz-var-color-purple-100;
 }
 
 .childDrilldownButtonIcon {
@@ -266,7 +266,7 @@ $delay-before-showing-loading-placeholders: 500ms;
 
 .loadingMenu {
   composes: menu;
-  background-color: $kz-var-color-white;
+  background-color: $kz-var-color-neutral-100;
 
   .parent,
   .current {

@@ -20,7 +20,7 @@ $illustration-size: 155px;
 .banner {
   display: flex;
   flex-direction: column;
-  background: $kz-var-color-white;
+  background: $kz-var-color-neutral-100;
   min-width: 320px;
   max-width: $kz-var-layout-breakpoints-large;
   border: $kz-var-border-borderless-border-width
@@ -32,7 +32,7 @@ $illustration-size: 155px;
   position: relative;
   top: -1px;
   transition: $ca-banner-fade-out, $ca-banner-collapse-height-delayed;
-  color: $kz-var-color-wisteria-800;
+  color: $kz-var-color-purple-800;
 
   @include ca-media-desktop {
     min-height: calc(12rem - calc(#{$bannerPadding} * 2));
@@ -136,9 +136,9 @@ $illustration-size: 155px;
   position: absolute;
   top: $kz-var-spacing-sm;
   right: $kz-var-spacing-sm;
-  color: $kz-var-color-wisteria-800;
+  color: $kz-var-color-purple-800;
 }
 
 .prominent {
-  background: $kz-var-color-cluny-100;
+  background: $kz-var-color-blue-100;
 }

@@ -24,9 +24,9 @@ $test-color: $kz-var-color-purple-800;
 
   test: $kz-var-color-purple-800;
 
-  color: $kz-color-stone $kz-color-ash $kz-var-color-iron;
-  color: $kz-color-stone;
-  color: $kz-color-white;
-  color: $kz-color-iron;
-  color: $kz-color-slate;
+  color: $kz-var-color-neutral-200 $kz-var-color-neutral-300 $kz-var-color-neutral-500;
+  color: $kz-var-color-neutral-200;
+  color: $kz-var-color-neutral-100;
+  color: $kz-var-color-neutral-500;
+  color: $kz-var-color-neutral-600;
 }

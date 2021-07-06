@@ -26,7 +26,7 @@ $left-content__width: 221px;
   display: flex;
   border-radius: $kz-var-border-solid-border-radius 0 0
     $kz-var-border-solid-border-radius;
-  color: $kz-var-color-white;
+  color: $kz-var-color-neutral-100;
   padding: ($ca-grid / 2) ($ca-grid * 2);
   flex-direction: column;
   flex-shrink: 0;
@@ -40,19 +40,19 @@ $left-content__width: 221px;
   }
 
   &.wisteria700 {
-    background-color: $kz-var-color-wisteria-700;
+    background-color: $kz-var-color-purple-700;
   }
 
   &.wisteria200 {
-    background-color: $kz-var-color-wisteria-200;
+    background-color: $kz-var-color-purple-200;
   }
 
   &.cluny200 {
-    background-color: $kz-var-color-cluny-200;
+    background-color: $kz-var-color-blue-200;
   }
 
   &.seedling200 {
-    background-color: $kz-var-color-seedling-200;
+    background-color: $kz-var-color-green-200;
   }
 }
 
@@ -66,8 +66,8 @@ $left-content__width: 221px;
   display: flex;
   flex-direction: column;
   padding: 51px;
-  background-color: $kz-var-color-white;
-  color: $kz-var-color-wisteria-800;
+  background-color: $kz-var-color-neutral-100;
+  color: $kz-var-color-purple-800;
   width: 100%;
 }
 
