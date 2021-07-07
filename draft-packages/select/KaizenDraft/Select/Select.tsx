@@ -83,6 +83,7 @@ export const Select = (props: SelectProps & ReactSelectProps<any, boolean>) => {
         NoOptionsMessage,
         SingleValue,
         MultiValue,
+        ValueContainer,
         IndicatorsContainer,
         ClearIndicator,
         IndicatorSeparator: null,
@@ -108,6 +109,7 @@ export const AsyncSelect = (props: AsyncProps) => (
       NoOptionsMessage,
       SingleValue,
       MultiValue,
+      ValueContainer,
       IndicatorsContainer,
       ClearIndicator: null,
       IndicatorSeparator: null,
@@ -170,6 +172,12 @@ const SingleValue: typeof components.SingleValue = props => (
   <components.SingleValue {...props} className={styles.singleValueOverrides}>
     <span className={styles.singleValue}>{props.children}</span>
   </components.SingleValue>
+)
+
+const ValueContainer: typeof components.ValueContainer = props => (
+  <components.ValueContainer {...props} className={styles.valueContainer}>
+    {props.children}
+  </components.ValueContainer>
 )
 
 const MultiValue: typeof components.MultiValue = props => (

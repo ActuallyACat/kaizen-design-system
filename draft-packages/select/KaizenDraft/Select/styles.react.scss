@@ -41,6 +41,9 @@ $focus-border-color: $kz-var-color-cluny-500;
     }
   }
   .control {
+    .valueContainer {
+      padding: 7px 0px 0px 7px;
+    }
     &.disabled {
       opacity: 0.3;
     }
@@ -129,6 +132,7 @@ $focus-border-color: $kz-var-color-cluny-500;
 
   .multiValue {
     margin-right: $ca-grid * (7 / 24);
+    margin-bottom: $ca-grid * (7 / 24);
   }
 
   &.secondary,
