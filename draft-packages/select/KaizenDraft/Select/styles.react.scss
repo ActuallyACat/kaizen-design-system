@@ -42,7 +42,7 @@ $focus-border-color: $kz-var-color-cluny-500;
   }
   .control {
     .valueContainer {
-      padding: 7px 0px 0px 7px;
+      padding: $ca-grid * (7 / 24) 0px 0px $ca-grid * (7 / 24);
     }
     &.disabled {
       opacity: 0.3;
