@@ -11,8 +11,7 @@
   position: absolute;
   z-index: $ca-z-index-dropdown;
   background-color: $kz-var-color-neutral-100;
-  box-shadow: 0 0 ($ca-grid / 2)
-    rgba($kz-var-color-purple-800-rgb-params, 0.3);
+  box-shadow: 0 0 ($ca-grid / 2) rgba($kz-var-color-purple-800-rgb-params, 0.3);
   border-radius: $kz-var-border-solid-border-radius;
   overflow: hidden;
   padding: 4px 0 0;

@@ -52,16 +52,25 @@
   }
 
   &.positive {
-    background-color: var($kz-var-id-color-green-100, $kz-var-color-neutral-300);
+    background-color: var(
+      $kz-var-id-color-green-100,
+      $kz-var-color-neutral-300
+    );
   }
   &.negative {
     background-color: var($kz-var-id-color-red-100, $kz-var-color-neutral-300);
   }
   &.action {
-    background-color: var($kz-var-id-color-orange-100, $kz-var-color-neutral-300);
+    background-color: var(
+      $kz-var-id-color-orange-100,
+      $kz-var-color-neutral-300
+    );
   }
   &.neutral {
-    background-color: var($kz-var-id-color-purple-100, $kz-var-color-neutral-300);
+    background-color: var(
+      $kz-var-id-color-purple-100,
+      $kz-var-color-neutral-300
+    );
   }
   &.informative {
     background-color: var($kz-var-id-color-blue-100, $kz-var-color-neutral-300);

@@ -16,10 +16,7 @@
 
 .positive {
   background: $kz-var-color-green-100;
-  border-color: var(
-    #{$kz-var-id-color-green-300},
-    $kz-var-color-green-200
-  );
+  border-color: var(#{$kz-var-id-color-green-300}, $kz-var-color-green-200);
   color: $kz-var-color-purple-800;
 }
 
@@ -45,7 +42,7 @@
   // Slate 700 10% for Heart theme, Wisteria 300 for Zen theme (use Zen fallback when CSS variables aren't available).
   --slate-700-10: rgba(var(#{$kz-var-id-color-neutral-600-rgb-params}), 0.1);
   background-color: $kz-var-color-neutral-300;
-  border-color: var(--slate-700-10, $kz-var-color-purple-300);
+  border-color: var(--neutral-600-700-10, $kz-var-color-purple-300);
 }
 
 // Border Style Variations
@@ -56,8 +53,8 @@
 }
 
 .dashed {
-  border-style: $kz-var-border-dashed-border-style;
-  border-width: $kz-var-border-dashed-border-width;
+  border-style: $kz-var-border-dneutral-300ed-border-style;
+  border-width: $kz-var-border-dneutral-300ed-border-width;
 }
 
 .none {

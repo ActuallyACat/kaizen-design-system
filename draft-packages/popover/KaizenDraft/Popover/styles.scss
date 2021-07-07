@@ -64,7 +64,10 @@ $large-width: 450px;
 }
 
 .defaultArrow {
-  @include arrow(white, var($kz-var-id-color-neutral-300, $kz-var-color-purple-200));
+  @include arrow(
+    neutral-100,
+    var($kz-var-id-color-neutral-300, $kz-var-color-purple-200)
+  );
 }
 
 $informative-box-border-color: var(

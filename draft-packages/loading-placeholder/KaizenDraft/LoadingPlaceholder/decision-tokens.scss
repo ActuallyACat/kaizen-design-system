@@ -6,8 +6,14 @@
 // If the `--kz-var-*` variables do not exist, then our `--loading-placeholder--*` variables will also be invalid.
 // Therefore when we use `--loading-placeholder--*` they will either correctly have alpha added, or trigger a fallback.
 @mixin loading-placeholder-theme-switching-tokens() {
-  --loading-placeholder--color-background-default: rgba(var(#{$kz-var-id-color-neutral-600-rgb-params}), 0.1);
-  --loading-placeholder--color-background-reversed: rgba(var(#{$kz-var-id-color-neutral-100-rgb-params}), 0.1);
+  --loading-placeholder--color-background-default: rgba(
+    var(#{$kz-var-id-color-neutral-600-rgb-params}),
+    0.1
+  );
+  --loading-placeholder--color-background-reversed: rgba(
+    var(#{$kz-var-id-color-neutral-100-rgb-params}),
+    0.1
+  );
 }
 
 // Decision tokens for background colours based on presence of CSS variables.

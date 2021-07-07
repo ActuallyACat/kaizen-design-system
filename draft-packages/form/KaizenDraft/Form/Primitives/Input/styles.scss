@@ -248,7 +248,10 @@ $input-disabled-border-alpha: 50%;
 
   &.disabled {
     color: rgba($kz-var-color-neutral-100-rgb-params, $input-disabled-opacity);
-    border-color: rgba($kz-var-color-neutral-100-rgb-params, $input-disabled-border-alpha);
+    border-color: rgba(
+      $kz-var-color-neutral-100-rgb-params,
+      $input-disabled-border-alpha
+    );
 
     @include form-input-placeholder {
       opacity: $input-disabled-opacity;

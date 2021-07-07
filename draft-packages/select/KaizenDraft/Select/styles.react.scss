@@ -46,7 +46,6 @@ $focus-border-color: $kz-var-color-blue-500;
     }
     min-height: $input-height;
     border: $kz-var-border-solid-border-width $kz-var-border-solid-border-style
-      
       var($kz-var-id-color-neutral-500, $kz-var-color-purple-500);
     border-radius: $kz-var-border-solid-border-radius;
 
@@ -54,7 +53,10 @@ $focus-border-color: $kz-var-color-blue-500;
       // Slate on Heart theme, Wisteria700 on Zen. Switching not needed when Zen is removed.
       border-color: var($kz-var-id-color-neutral-600, $kz-var-color-purple-700);
       // Stone on Heart theme, Wisteria100 on Zen. Switching not needed when Zen is removed.
-      background-color: var($kz-var-id-color-neutral-200, $kz-var-color-purple-100);
+      background-color: var(
+        $kz-var-id-color-neutral-200,
+        $kz-var-color-purple-100
+      );
       cursor: pointer;
     }
   }

@@ -54,7 +54,10 @@ $small: $kz-var-spacing-md;
   margin-right: -0.6625rem;
   margin-left: -0.225rem;
 
-  --dt-dismiss-icon-color-heart: rgba(var(#{$kz-var-id-color-purple-800-rgb-params}), 0.7);
+  --dt-dismiss-icon-color-heart: rgba(
+    var(#{$kz-var-id-color-purple-800-rgb-params}),
+    0.7
+  );
   $dt-dismiss-icon-color: var(
     --dt-dismiss-icon-color-heart,
     $kz-var-color-purple-600

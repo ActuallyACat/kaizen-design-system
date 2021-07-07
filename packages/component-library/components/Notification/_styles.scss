@@ -104,7 +104,10 @@ $ca-notification-slide-right: transform $ca-duration-fast ease-out;
     &%ca-notification---global {
       // Yuzu200 for Heart theme, Yuzu300 for Zen theme. Switch not needed when Zen is removed.
       // Use Yuzu200 for Heart theme, and Yuzu300 for zen (the default fallback)
-      background-color: var($kz-var-id-color-yellow-200, $kz-var-color-yellow-300);
+      background-color: var(
+        $kz-var-id-color-yellow-200,
+        $kz-var-color-yellow-300
+      );
     }
   }
 
@@ -116,10 +119,7 @@ $ca-notification-slide-right: transform $ca-duration-fast ease-out;
     &%ca-notification---global {
       // Coral200 for Heart theme, Coral300 for Zen theme. Switch not needed when Zen is removed.
       // Use Coral 200 for Heart theme, and Coral 300 for zen (the default fallback)
-      background-color: var(
-        $kz-var-id-color-red-200,
-        $kz-var-color-red-300
-      );
+      background-color: var($kz-var-id-color-red-200, $kz-var-color-red-300);
     }
   }
 
