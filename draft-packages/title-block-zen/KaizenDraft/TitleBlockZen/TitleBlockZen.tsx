@@ -156,7 +156,7 @@ export const isMenuGroupNotButton = (
   value: TitleBlockButtonProps | MenuGroup
 ): value is MenuGroup => "menuItems" in value
 
-export type Variant = "admin" | "education" // the default is wisteria bg (AKA "reporting")
+export type Variant = "admin" | "education" // the default is purple bg (AKA "reporting")
 
 type NavigationTabs = Array<React.ReactElement<NavigationTabProps>>
 
