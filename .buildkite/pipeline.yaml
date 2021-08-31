@@ -62,6 +62,18 @@ steps:
     <<: *defaults
     agent_query_rules: ["queue=build-unrestricted-large"]
 
+  - block: ":nut_and_bolt: Prepublish Compilation Check"
+    key: prepublish-compilation-prompt
+    prompt: "Run `build` in each package to rigorously check that publish will work?"
+
+  - name: ":nut_and_bolt: Prepublish Compilation Check"
+    concurrency: 1
+    depends_on: prepublish-compilation-prompt
+    concurrency_group: prepublish-compilation
+    command: ".buildkite/scripts/compile.sh"
+    branches: "!master"
+    <<: *defaults
+
   - wait: ~
     continue_on_failure: true
 
@@ -79,9 +91,13 @@ steps:
           run: publish
 
   - block: ":rainbow: Build (chromatic)"
+    key: chromatic-prompt
     prompt: "Check in Chromatic?"
 
   - name: ":rainbow: Build (chromatic)"
+    depends_on: chromatic-prompt
+    concurrency: 1
+    concurrency_group: chromatic-build
     command: ".buildkite/scripts/run-chromatic-build.sh"
     <<: *defaults
     agent_query_rules: ["queue=build-unrestricted-large"]
