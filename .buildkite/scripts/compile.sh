@@ -6,5 +6,7 @@ set -e
 
 yarn install --frozen-lockfile
 
+yarn lerna run --parallel build
+
 # TypeScript build for the whole repo 
 yarn tsc
