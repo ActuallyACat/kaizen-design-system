@@ -471,3 +471,10 @@ export const SurveyOverviewClosed = (props: SceneProps) => (
 export const SurveyGetStarted = (props: SceneProps) => (
   <Base {...props} name="illustrations/scene/getting-started.svg" />
 )
+
+export const BrandMomentUploadEmployeeData = (props: SceneProps) => (
+  <Base
+    {...props}
+    name="illustrations/heart/scene/brand-moments-upload-employee-data.svg"
+  />
+)
