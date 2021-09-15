@@ -26,7 +26,7 @@ const TextAreaField: React.FunctionComponent<TextAreaFieldProps> = props => {
     description,
     inline,
     reversed,
-    variant,
+    variant = "default",
     maxLength,
     placeholder,
     textAreaRef,
