@@ -1,6 +1,7 @@
 import * as React from "react"
+import { withAccessibleIcon, withAccessibleIconProps } from "../Base"
 
-export const Academy = (props: React.SVGProps<SVGSVGElement>) => (
+const Send = (props: withAccessibleIconProps) => (
   <svg
     width={20}
     height={20}
@@ -10,10 +11,12 @@ export const Academy = (props: React.SVGProps<SVGSVGElement>) => (
   >
     <defs>
       <path
-        d="M10 2L0 7.455l10 5.454 8.182-4.464v6.281H20V7.455L10 2zm0 12.726l-6.364-3.471v3.636L10 18.364l6.364-3.473v-3.636L10 14.726z"
         id="prefix__a"
+        d="M2.008 3.143L2 8.475l11.425 1.523L2 11.52l.008 5.332 15.987-6.855z"
       />
     </defs>
     <use fill="currentColor" xlinkHref="#prefix__a" fillRule="evenodd" />
   </svg>
 )
+
+export default withAccessibleIcon(Send)
