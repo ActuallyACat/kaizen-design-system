@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.dist.json",
+  "compilerOptions": {
+    "allowJs": false,
+    "declaration": true,
+    "noEmit": false,
+    "sourceMap": true
+  },
+  "exclude": [
+    "docs"
+  ],
+  "files": [
+    "./svgr.d.ts"
+  ],
+}
