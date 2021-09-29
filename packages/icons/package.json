@@ -47,6 +47,7 @@
   "dependencies": {
     "@svgr/plugin-prettier": "^5.5.0",
     "@svgr/plugin-svgo": "^5.5.0",
-    "lodash.startcase": "^4.4.0"
+    "lodash.startcase": "^4.4.0",
+    "uuid": "^8.3.2"
   }
 }
