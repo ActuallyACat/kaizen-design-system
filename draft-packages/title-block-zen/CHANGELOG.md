@@ -3,6 +3,170 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.4](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-title-block-zen@4.1.3...@kaizen/draft-title-block-zen@4.1.4) (2021-11-01)
+
+
+### Bug Fixes
+
+* **refactor:** Refactored discouraged usage of accessing design tokens directly in Typescript ([#2122](https://github.com/cultureamp/kaizen-design-system/issues/2122)) ([2f4abe2](https://github.com/cultureamp/kaizen-design-system/commit/2f4abe2c742400b2361629e6bec3d31af0727683))
+
+
+
+
+
+## [4.1.3](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-title-block-zen@4.1.2...@kaizen/draft-title-block-zen@4.1.3) (2021-10-31)
+
+**Note:** Version bump only for package @kaizen/draft-title-block-zen
+
+
+
+
+
+## [4.1.2](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-title-block-zen@4.1.1...@kaizen/draft-title-block-zen@4.1.2) (2021-10-28)
+
+
+### Bug Fixes
+
+* Allow titleblock title to take up to 2 lines of space before truncating ([#2117](https://github.com/cultureamp/kaizen-design-system/issues/2117)) ([b87464f](https://github.com/cultureamp/kaizen-design-system/commit/b87464fe7496b73c0948a00e83d32a01c2e2daea))
+
+
+
+
+
+## [4.1.1](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-title-block-zen@4.1.0...@kaizen/draft-title-block-zen@4.1.1) (2021-10-27)
+
+**Note:** Version bump only for package @kaizen/draft-title-block-zen
+
+
+
+
+
+# [4.1.0](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-title-block-zen@4.0.3...@kaizen/draft-title-block-zen@4.1.0) (2021-10-27)
+
+
+### Features
+
+* Adjust Menu structure again to allow content separate from the list of items ([#2126](https://github.com/cultureamp/kaizen-design-system/issues/2126)) ([b56864b](https://github.com/cultureamp/kaizen-design-system/commit/b56864b6982232d4360352bcfc724fa1cc6c37e8))
+
+
+
+
+
+## [4.0.3](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-title-block-zen@4.0.2...@kaizen/draft-title-block-zen@4.0.3) (2021-10-26)
+
+**Note:** Version bump only for package @kaizen/draft-title-block-zen
+
+
+
+
+
+## [4.0.2](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-title-block-zen@4.0.1...@kaizen/draft-title-block-zen@4.0.2) (2021-10-26)
+
+**Note:** Version bump only for package @kaizen/draft-title-block-zen
+
+
+
+
+
+## [4.0.1](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-title-block-zen@4.0.0...@kaizen/draft-title-block-zen@4.0.1) (2021-10-25)
+
+**Note:** Version bump only for package @kaizen/draft-title-block-zen
+
+
+
+
+
+# [4.0.0](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-title-block-zen@3.7.3...@kaizen/draft-title-block-zen@4.0.0) (2021-10-25)
+
+
+### Features
+
+* BREAKING CHANGE: complete restructure of Menu component for accessibility audit ([#2093](https://github.com/cultureamp/kaizen-design-system/issues/2093)) ([2a4f5a4](https://github.com/cultureamp/kaizen-design-system/commit/2a4f5a4ad1e5a947a064e70f840cadbaece45dbf))
+
+
+### BREAKING CHANGES
+
+No impact on consumption of TitleBlockZen, internals have been updated after Menu refactor but should be a safe upgrade
+
+
+
+
+
+## [3.7.3](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-title-block-zen@3.7.2...@kaizen/draft-title-block-zen@3.7.3) (2021-10-24)
+
+**Note:** Version bump only for package @kaizen/draft-title-block-zen
+
+
+
+
+
+## [3.7.2](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-title-block-zen@3.7.1...@kaizen/draft-title-block-zen@3.7.2) (2021-10-22)
+
+**Note:** Version bump only for package @kaizen/draft-title-block-zen
+
+
+
+
+
+## [3.7.1](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-title-block-zen@3.7.0...@kaizen/draft-title-block-zen@3.7.1) (2021-10-22)
+
+**Note:** Version bump only for package @kaizen/draft-title-block-zen
+
+
+
+
+
+# [3.7.0](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-title-block-zen@3.6.26...@kaizen/draft-title-block-zen@3.7.0) (2021-10-22)
+
+
+### Features
+
+* Add focus rings to TitleBlock mobile actions ([#2103](https://github.com/cultureamp/kaizen-design-system/issues/2103)) ([6e9e93e](https://github.com/cultureamp/kaizen-design-system/commit/6e9e93e8abe1016795a8e427f8a79a95ce1b6d5d))
+
+
+
+
+
+## [3.6.26](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-title-block-zen@3.6.25...@kaizen/draft-title-block-zen@3.6.26) (2021-10-22)
+
+**Note:** Version bump only for package @kaizen/draft-title-block-zen
+
+
+
+
+
+## [3.6.25](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-title-block-zen@3.6.24...@kaizen/draft-title-block-zen@3.6.25) (2021-10-21)
+
+**Note:** Version bump only for package @kaizen/draft-title-block-zen
+
+
+
+
+
+## [3.6.24](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-title-block-zen@3.6.23...@kaizen/draft-title-block-zen@3.6.24) (2021-10-20)
+
+**Note:** Version bump only for package @kaizen/draft-title-block-zen
+
+
+
+
+
+## [3.6.23](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-title-block-zen@3.6.22...@kaizen/draft-title-block-zen@3.6.23) (2021-10-18)
+
+**Note:** Version bump only for package @kaizen/draft-title-block-zen
+
+
+
+
+
+## [3.6.22](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-title-block-zen@3.6.21...@kaizen/draft-title-block-zen@3.6.22) (2021-10-18)
+
+**Note:** Version bump only for package @kaizen/draft-title-block-zen
+
+
+
+
+
 ## [3.6.21](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-title-block-zen@3.6.20...@kaizen/draft-title-block-zen@3.6.21) (2021-10-15)
 
 **Note:** Version bump only for package @kaizen/draft-title-block-zen

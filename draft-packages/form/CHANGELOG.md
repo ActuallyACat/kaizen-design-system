@@ -3,6 +3,106 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.13.6](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-form@3.13.5...@kaizen/draft-form@3.13.6) (2021-10-31)
+
+**Note:** Version bump only for package @kaizen/draft-form
+
+
+
+
+
+## [3.13.5](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-form@3.13.4...@kaizen/draft-form@3.13.5) (2021-10-26)
+
+**Note:** Version bump only for package @kaizen/draft-form
+
+
+
+
+
+## [3.13.4](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-form@3.13.3...@kaizen/draft-form@3.13.4) (2021-10-26)
+
+**Note:** Version bump only for package @kaizen/draft-form
+
+
+
+
+
+## [3.13.3](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-form@3.13.2...@kaizen/draft-form@3.13.3) (2021-10-25)
+
+**Note:** Version bump only for package @kaizen/draft-form
+
+
+
+
+
+## [3.13.2](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-form@3.13.1...@kaizen/draft-form@3.13.2) (2021-10-22)
+
+**Note:** Version bump only for package @kaizen/draft-form
+
+
+
+
+
+## [3.13.1](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-form@3.13.0...@kaizen/draft-form@3.13.1) (2021-10-22)
+
+
+### Bug Fixes
+
+* elm field description styles ([#2115](https://github.com/cultureamp/kaizen-design-system/issues/2115)) ([da43631](https://github.com/cultureamp/kaizen-design-system/commit/da436315ea21c17f4feaac870d525d416da9f64a))
+
+
+
+
+
+# [3.13.0](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-form@3.12.1...@kaizen/draft-form@3.13.0) (2021-10-22)
+
+
+### Features
+
+* Add reversed variants of RadioFields and RadioGroups ([#2101](https://github.com/cultureamp/kaizen-design-system/issues/2101)) ([14ca855](https://github.com/cultureamp/kaizen-design-system/commit/14ca855fd797ff186b83c5dce8328d5136763bb9))
+
+
+
+
+
+## [3.12.1](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-form@3.12.0...@kaizen/draft-form@3.12.1) (2021-10-21)
+
+**Note:** Version bump only for package @kaizen/draft-form
+
+
+
+
+
+# [3.12.0](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-form@3.11.8...@kaizen/draft-form@3.12.0) (2021-10-20)
+
+
+### Features
+
+* Add reversed variants of checkbox fields ([#2087](https://github.com/cultureamp/kaizen-design-system/issues/2087)) ([e262dd5](https://github.com/cultureamp/kaizen-design-system/commit/e262dd5fb339b4487840c28167d27d521bce468a))
+
+
+
+
+
+## [3.11.8](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-form@3.11.7...@kaizen/draft-form@3.11.8) (2021-10-18)
+
+
+### Bug Fixes
+
+* Put id on InputRange input ([#2092](https://github.com/cultureamp/kaizen-design-system/issues/2092)) ([d629f7a](https://github.com/cultureamp/kaizen-design-system/commit/d629f7a44fe6daebfab91b72cb93b9aa3147104b))
+
+
+
+
+
+## [3.11.7](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-form@3.11.6...@kaizen/draft-form@3.11.7) (2021-10-18)
+
+**Note:** Version bump only for package @kaizen/draft-form
+
+
+
+
+
 ## [3.11.6](https://github.com/cultureamp/kaizen-design-system/compare/@kaizen/draft-form@3.11.5...@kaizen/draft-form@3.11.6) (2021-10-15)
 
 **Note:** Version bump only for package @kaizen/draft-form
