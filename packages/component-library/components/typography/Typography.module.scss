@@ -1,0 +1,60 @@
+$fontSize: (
+  "84": 5.25rem,
+  "72": 4.5rem,
+  "54": 3.375rem,
+  "48": 3rem,
+  "36": 2.25rem,
+  "34": 2.125rem,
+  "30": 1.875rem,
+  "28": 1.75rem,
+  "26": 1.625rem,
+  "24": 1.5rem,
+  "22": 1.375rem,
+  "20": 1.25rem,
+  "18": 1.125rem,
+  "16": 1rem,
+  "14": 0.875rem,
+  "12": 0.75rem,
+);
+@each $name, $size in $fontSize {
+  .font-size-#{$name} {
+    font-size: $size;
+  }
+}
+
+$lineHeight: (
+  "84": 5.25rem,
+  // used in sticker sheet
+  "72": 4.5rem,
+  "66": 4.125rem,
+  // used in sticker sheet
+  "54": 3.375rem,
+  "48": 3rem,
+  // used in sticker sheet
+  "42": 2.625rem,
+  // used in sticker sheet
+  "36": 2.25rem,
+  // used in sticker sheet
+  "34": 2.125rem,
+  "32": 2rem,
+  // used in sticker sheet
+  "30": 1.875rem,
+  // used in sticker sheet
+  "28": 1.75rem,
+  "26": 1.625rem,
+  "24": 1.5rem,
+  // used in sticker sheet
+  "22": 1.375rem,
+  "20": 1.25rem,
+  "18": 1.125rem,
+  // used in sticker sheet
+  "16": 1rem,
+  "14": 0.875rem,
+  "12": 0.75rem,
+);
+
+@each $name, $size in $lineHeight {
+  .line-height-#{$name} {
+    line-height: $size;
+  }
+}

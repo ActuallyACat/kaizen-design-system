@@ -1,7 +1,8 @@
 import * as React from "react"
 import classNames from "classnames"
-import { defaultTheme } from "@kaizen/design-tokens"
-import styles from "../Heading/Heading.module.scss"
+import { defaultTheme, TypographyFont, Theme } from "@kaizen/design-tokens"
+import { omit } from "lodash"
+import styles from "./Typography.module.scss"
 
 const TypographyContext = React.createContext(defaultTheme.typography)
 
@@ -79,7 +80,22 @@ interface TypographyProps
    */
   variant: Variants
   color?: AllowedColors
-  size: { [key in Breakpoint]?: Variants }
+  size?: { [key in Breakpoint]?: Variants } & Variants
+}
+
+/**
+ * To avoid awkwardness in the naming of the classes generated for the line
+ * height and font size, we use a pixel suffix. This function maps the theme
+ * Object to the correct suffix.
+ * @param typographyProperty
+ * @returns
+ */
+const mapThemePropertyToClass = (typographyProperty?: string) => {
+  if (typographyProperty === undefined) {
+    return ""
+  }
+  const nameOfClass = parseFloat(typographyProperty.replace("rem", ""))
+  return nameOfClass * 16 // convert rem to px
 }
 
 export const Typography = ({
@@ -90,18 +106,40 @@ export const Typography = ({
   color = "dark",
   ...otherProps
 }: TypographyProps) => {
-  const className = classNames([classNameAndIHaveSpokenToDST, styles[color]])
   const responsiveTypography = useResponsiveTypography()
   const styleObject = mapVariantToStyleObject(variant, responsiveTypography)
 
+  const classes = classNames(
+    classNameAndIHaveSpokenToDST,
+    styles[color],
+    styles[
+      `line-height-${mapThemePropertyToClass(styleObject.lineHeight as string)}`
+    ],
+    styles[
+      `font-size-${mapThemePropertyToClass(styleObject.fontSize as string)}`
+    ],
+    styles[
+      `letter-spacing-${mapThemePropertyToClass(
+        styleObject.letterSpacing as string
+      )}`
+    ]
+  )
+
   return (
-    <div className={className} style={styleObject}>
+    <div
+      className={classes}
+      style={omit(styleObject, "lineHeight", "fontSize")}
+      {...otherProps}
+    >
       {children}
     </div>
   )
 }
 
-function mapVariantToStyleObject(variant, typographyStyles) {
+function mapVariantToStyleObject(
+  variant: string,
+  typographyStyles: { [key: string]: Partial<TypographyFont> }
+) {
   switch (variant) {
     case "display-0":
       return typographyStyles.display0
