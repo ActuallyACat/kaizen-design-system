@@ -41,7 +41,7 @@
     "classnames": "^2.3.1",
     "lodash": "^4.17.21",
     "motion-ui": "cultureamp/motion-ui",
-    "react-focus-lock": "^1.19.1",
+    "react-focus-lock": "^2.6.0",
     "react-media": "^1.10.0",
     "uuid": "^3.4.0"
   },
