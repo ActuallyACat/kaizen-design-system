@@ -17,7 +17,7 @@ export default {
       },
     },
     ...figmaEmbed(
-      "https://www.figma.com/file/GMxm8rvDCbj0Xw3TQWBZ8b/UI-Kit-Zen?node-id=1929%3A14398"
+      "https://www.figma.com/file/eZKEE5kXbEMY3lx84oz8iN/%E2%9D%A4%EF%B8%8F-UI-Kit%3A-Heart?node-id=1929%3A14397"
     ),
   },
   decorators: [withDesign],
@@ -52,13 +52,13 @@ const BadgeStoryWrapper: React.FunctionComponent<{
   )
 }
 
-export const DefaultStory = () => (
+export const DefaultStory = args => (
   <BadgeStoryWrapper>
     {(badgeCount, useAnimation) =>
       useAnimation ? (
         <BadgeAnimated variant="default">{badgeCount}</BadgeAnimated>
       ) : (
-        <Badge variant="default">{badgeCount}</Badge>
+        <Badge {...args}>{badgeCount}</Badge>
       )
     }
   </BadgeStoryWrapper>
@@ -93,6 +93,20 @@ export const Dark = () => (
 )
 
 Dark.storyName = "Dark"
+
+export const Dot = () => (
+  <BadgeStoryWrapper>
+    {(badgeCount, useAnimation) =>
+      useAnimation ? (
+        <BadgeAnimated variant="dot"></BadgeAnimated>
+      ) : (
+        <Badge variant="dot">{badgeCount}</Badge>
+      )
+    }
+  </BadgeStoryWrapper>
+)
+
+Dot.storyName = "Dot"
 
 export const Reversed = () => (
   <BadgeStoryWrapper>
