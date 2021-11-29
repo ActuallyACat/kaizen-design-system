@@ -1,5 +1,5 @@
 import classNames from "classnames"
-import { createElement, HTMLAttributes } from "react"
+import * as React from "react"
 
 import styles from "./Data.module.scss"
 
@@ -18,14 +18,17 @@ export type AllowedTags =
   | "h6"
   | "label"
 
+export type AllowedColors = "dark" | "white"
+
 export interface DataProps
-  extends Omit<HTMLAttributes<HTMLElement>, "className"> {
+  extends Omit<React.HTMLAttributes<HTMLElement>, "className"> {
   /**
    * Not recommended. A short-circuit for overriding styles in a pinch
    * @default ""
    */
   classNameAndIHaveSpokenToDST?: string
   children: React.ReactNode
+  color?: AllowedColors
   /**
    * HTML elements that are allowed on Data. When not supplied, the tag is inferred from
    * the variant.
@@ -35,24 +38,52 @@ export interface DataProps
    * Allowed Data variants
    */
   variant: DataVariants
+  /**
+   * A unit type that prepends the children
+   */
+  prefixUnit?: string
+  /**
+   * A unit type that append the children
+   */
+  suffixUnit?: string
 }
 
 export const Data = ({
   classNameAndIHaveSpokenToDST,
   children,
+  color = "dark",
   tag,
   variant,
+  prefixUnit,
+  suffixUnit,
   ...otherProps
 }: DataProps) => {
-  const inferredTag = tag === undefined ? translateVariantToTag(variant) : tag
+  const InferredTag = tag === undefined ? translateVariantToTag(variant) : tag
 
   const className = classNames([
     styles.data,
     styles[variant],
     classNameAndIHaveSpokenToDST,
+    styles[color],
   ])
 
-  return createElement(inferredTag, { ...otherProps, className }, children)
+  return (
+    <InferredTag className={className}>
+      {renderUnit({ unit: prefixUnit, variant })}
+      {children}
+      {renderUnit({ unit: suffixUnit, variant })}
+    </InferredTag>
+  )
+}
+
+function renderUnit({
+  unit,
+  variant,
+}: {
+  variant: DataVariants
+  unit?: string
+}) {
+  return unit ? <span className={styles[`${variant}Unit`]}>{unit}</span> : null
 }
 
 /**
@@ -62,11 +93,11 @@ export const Data = ({
 const translateVariantToTag = (varaint: DataVariants) => {
   switch (varaint) {
     case "large":
-      return "h1"
-    case "medium":
       return "h2"
+    case "medium":
+      return "h3"
     case "small":
     default:
-      return "h3"
+      return "h4"
   }
 }

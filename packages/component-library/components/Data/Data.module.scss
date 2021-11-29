@@ -1,4 +1,5 @@
 @import "~@kaizen/design-tokens/sass/typography";
+@import "~@kaizen/design-tokens/sass/color";
 
 .heading {
   margin: 0;
@@ -49,4 +50,14 @@
   font-size: $typography-data-small-units-font-size;
   line-height: 1; // $typography-data-small-units-line-height;
   letter-spacing: $typography-data-small-units-letter-spacing;
+}
+
+.dark {
+  color: $color-purple-800;
+  opacity: 1;
+}
+
+.white {
+  color: $color-white;
+  opacity: 1;
 }
