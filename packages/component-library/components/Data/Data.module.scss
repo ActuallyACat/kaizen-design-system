@@ -1,0 +1,52 @@
+@import "~@kaizen/design-tokens/sass/typography";
+
+.heading {
+  margin: 0;
+}
+
+.large {
+  font-family: $typography-data-large-font-family;
+  font-weight: $typography-data-large-font-weight;
+  font-size: $typography-data-large-font-size;
+  line-height: $typography-data-large-line-height;
+  letter-spacing: $typography-data-large-letter-spacing;
+}
+
+.largeUnit {
+  font-family: $typography-data-large-units-font-family;
+  font-weight: $typography-data-large-units-font-weight;
+  font-size: $typography-data-large-units-font-size;
+  line-height: 1; // $typography-data-large-units-line-height;
+  letter-spacing: $typography-data-large-units-letter-spacing;
+}
+
+.medium {
+  font-family: $typography-data-medium-font-family;
+  font-weight: $typography-data-medium-font-weight;
+  font-size: $typography-data-medium-font-size;
+  line-height: $typography-data-medium-line-height;
+  letter-spacing: $typography-data-medium-letter-spacing;
+}
+
+.mediumUnit {
+  font-family: $typography-data-medium-units-font-family;
+  font-weight: $typography-data-medium-units-font-weight;
+  font-size: $typography-data-medium-units-font-size;
+  line-height: 1; // $typography-data-medium-units-line-height;
+  letter-spacing: $typography-data-medium-units-letter-spacing;
+}
+.small {
+  font-family: $typography-data-small-font-family;
+  font-weight: $typography-data-small-font-weight;
+  font-size: $typography-data-small-font-size;
+  line-height: $typography-data-small-line-height;
+  letter-spacing: $typography-data-small-letter-spacing;
+}
+
+.smallUnit {
+  font-family: $typography-data-small-units-font-family;
+  font-weight: $typography-data-small-units-font-weight;
+  font-size: $typography-data-small-units-font-size;
+  line-height: 1; // $typography-data-small-units-line-height;
+  letter-spacing: $typography-data-small-units-letter-spacing;
+}
