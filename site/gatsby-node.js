@@ -35,7 +35,7 @@ exports.onCreateWebpackConfig = ({ actions, loaders }) => {
 }
 
 exports.onCreateBabelConfig = ({ actions }, options) => {
-  const { presets, plugins } = require("../package.json").babel
+  const { presets, plugins } = require("./.babelrc.json")
   presets.forEach(preset => {
     actions.setBabelPreset(
       Array.isArray(preset)
@@ -53,7 +53,7 @@ exports.onCreateBabelConfig = ({ actions }, options) => {
 
 const path = require("path")
 const { createFilePath } = require("gatsby-source-filesystem")
-const componentReadmeRegex = /\/(?:components|draft-packages).*\W(\w+)\/README.mdx?$/i
+const componentReadmeRegex = /\/(?:components|draft-packages).*\/([-\w]+)\/README.mdx?$/i
 
 const camelToKebab = input =>
   input.replace(/[\w]([A-Z])/g, char => char[0] + "-" + char[1]).toLowerCase()
