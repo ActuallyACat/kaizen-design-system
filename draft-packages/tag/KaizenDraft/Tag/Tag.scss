@@ -62,6 +62,10 @@ $small: $spacing-md;
   margin-left: -0.225rem;
   color: rgba($color-purple-800-rgb, 0.7);
   cursor: pointer;
+  [dir="rtl"] & {
+    margin-left: -0.6625rem;
+    margin-right: -0.225rem;
+  }
 
   &:hover {
     color: $color-purple-800;
