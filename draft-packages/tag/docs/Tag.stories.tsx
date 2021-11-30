@@ -2,6 +2,7 @@ import { Tag } from "@kaizen/draft-tag"
 import * as React from "react"
 import { withDesign } from "storybook-addon-designs"
 import { Avatar } from "@kaizen/draft-avatar"
+import { assetUrl } from "@kaizen/hosted-assets"
 import { CATEGORIES } from "../../../storybook/constants"
 import { figmaEmbed } from "../../../storybook/helpers"
 
@@ -127,7 +128,10 @@ export const Profile = () => (
       }
       dismissible
     >
-      Harper Smith
+      Jane Doe
+    </Tag>
+    <Tag variant="profile" avatar={{}} dismissible>
+      Jane Doe
     </Tag>
   </StoryContainer>
 )

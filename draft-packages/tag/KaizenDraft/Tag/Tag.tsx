@@ -1,5 +1,5 @@
 import { Icon } from "@kaizen/component-library"
-import { AvatarProps } from "@kaizen/draft-avatar"
+import { Avatar, AvatarProps } from "@kaizen/draft-avatar"
 import classNames from "classnames"
 import * as React from "react"
 import clearIcon from "@kaizen/component-library/icons/clear.icon.svg"
@@ -42,6 +42,18 @@ const exclamationIconVariants: Variant[] = [
   "validationNegative",
   "validationCautionary",
 ]
+
+const isJSXElement = (
+  imageElementOrAvatarProps: JSX.Element | AvatarProps
+): imageElementOrAvatarProps is JSX.Element =>
+  "props" in imageElementOrAvatarProps
+
+const renderAvatar = (imageElementOrAvatarProps: JSX.Element | AvatarProps) =>
+  isJSXElement(imageElementOrAvatarProps) ? (
+    <>{imageElementOrAvatarProps}</>
+  ) : (
+    <Avatar {...imageElementOrAvatarProps} size="small" />
+  )
 
 const Tag = (props: TagProps) => {
   const {
@@ -107,7 +119,11 @@ const Tag = (props: TagProps) => {
               )
             }
             if (variant === "profile") {
-              return <span className={styles.validationIcon}>{avatar}</span>
+              return (
+                <span className={styles.validationIcon}>
+                  {avatar && renderAvatar(avatar)}
+                </span>
+              )
             }
           })()}
         <span
