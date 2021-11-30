@@ -1,4 +1,5 @@
 import { Icon } from "@kaizen/component-library"
+import { AvatarProps } from "@kaizen/draft-avatar"
 import classNames from "classnames"
 import * as React from "react"
 import clearIcon from "@kaizen/component-library/icons/clear.icon.svg"
@@ -21,7 +22,7 @@ type Variant =
   | "statusDraft"
   | "statusClosed"
   | "statusAction"
-
+  | "profile"
 export interface TagProps {
   readonly children: React.ReactNode
   readonly variant?: Variant
@@ -32,6 +33,7 @@ export interface TagProps {
   readonly onMouseDown?: React.MouseEventHandler<HTMLSpanElement>
   readonly onMouseLeave?: React.MouseEventHandler<HTMLSpanElement>
   readonly truncateWidth?: number
+  readonly avatar?: JSX.Element | AvatarProps
 }
 
 const successIconVariants: Variant[] = ["validationPositive"]
@@ -52,6 +54,7 @@ const Tag = (props: TagProps) => {
     onMouseDown,
     onMouseLeave,
     truncateWidth,
+    avatar,
   } = props
 
   const isTruncated = truncateWidth && truncateWidth > 0
@@ -60,7 +63,7 @@ const Tag = (props: TagProps) => {
   return (
     <div
       className={classNames(styles.root, {
-        [styles.default]: variant === "default",
+        [styles.default]: variant === "default" || "profile",
         [styles.sentimentPositive]: variant === "sentimentPositive",
         [styles.sentimentNeutral]: variant === "sentimentNeutral",
         [styles.sentimentNegative]: variant === "sentimentNegative",
@@ -102,6 +105,9 @@ const Tag = (props: TagProps) => {
                   <Icon icon={informationIcon} role="presentation" />
                 </span>
               )
+            }
+            if (variant === "profile") {
+              return <span className={styles.validationIcon}>{avatar}</span>
             }
           })()}
         <span

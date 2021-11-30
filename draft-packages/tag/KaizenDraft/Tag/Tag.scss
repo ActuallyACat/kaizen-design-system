@@ -39,10 +39,7 @@ $small: $spacing-md;
 }
 
 .validationIcon {
-  @include ca-margin(
-    $start: calc(#{$spacing-md} * -0.15),
-    $end: calc(#{$spacing-md} * 0.125)
-  );
+  @include ca-margin($start: calc(#{$spacing-md} * -0.15), $end: $spacing-xs);
   display: flex;
   align-items: center;
 }
