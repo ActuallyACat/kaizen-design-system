@@ -22,19 +22,24 @@ type Variant =
   | "statusDraft"
   | "statusClosed"
   | "statusAction"
-  | "profile"
-export interface TagProps {
-  readonly children: React.ReactNode
-  readonly variant?: Variant
-  readonly size?: "medium" | "small"
-  readonly inline?: boolean
-  readonly dismissible?: boolean
-  readonly onDismiss?: React.MouseEventHandler<HTMLSpanElement>
-  readonly onMouseDown?: React.MouseEventHandler<HTMLSpanElement>
-  readonly onMouseLeave?: React.MouseEventHandler<HTMLSpanElement>
-  readonly truncateWidth?: number
-  readonly avatar?: JSX.Element | AvatarProps
+export interface TagWithAvatarProps extends Omit<DefaultTagProps, "variant"> {
+  variant: "profile"
+  avatar: JSX.Element | AvatarProps
 }
+
+export interface DefaultTagProps {
+  variant?: Variant
+  children: React.ReactNode
+  size?: "medium" | "small"
+  inline?: boolean
+  dismissible?: boolean
+  onDismiss?: React.MouseEventHandler<HTMLSpanElement>
+  onMouseDown?: React.MouseEventHandler<HTMLSpanElement>
+  onMouseLeave?: React.MouseEventHandler<HTMLSpanElement>
+  truncateWidth?: number
+}
+
+type TagProps = DefaultTagProps | TagWithAvatarProps
 
 const successIconVariants: Variant[] = ["validationPositive"]
 
@@ -66,16 +71,14 @@ const Tag = (props: TagProps) => {
     onMouseDown,
     onMouseLeave,
     truncateWidth,
-    avatar,
   } = props
 
   const isTruncated = truncateWidth && truncateWidth > 0
   const canShowIcon = size === "medium"
-
   return (
     <div
       className={classNames(styles.root, {
-        [styles.default]: variant === "default" || "profile",
+        [styles.default]: variant === "default" || variant === "profile",
         [styles.sentimentPositive]: variant === "sentimentPositive",
         [styles.sentimentNeutral]: variant === "sentimentNeutral",
         [styles.sentimentNegative]: variant === "sentimentNegative",
@@ -97,33 +100,39 @@ const Tag = (props: TagProps) => {
       <div className={styles.layoutContainer}>
         {canShowIcon &&
           (() => {
-            if (successIconVariants.includes(variant)) {
-              return (
-                <span className={styles.validationIcon}>
-                  <Icon icon={successIcon} role="presentation" />
-                </span>
-              )
-            }
-            if (exclamationIconVariants.includes(variant)) {
-              return (
-                <span className={styles.validationIcon}>
-                  <Icon icon={exclamationIcon} role="presentation" />
-                </span>
-              )
-            }
-            if (variant === "validationInformative") {
-              return (
-                <span className={styles.validationIcon}>
-                  <Icon icon={informationIcon} role="presentation" />
-                </span>
-              )
-            }
-            if (variant === "profile") {
-              return (
-                <span className={styles.validationIcon}>
-                  {avatar && renderAvatar(avatar)}
-                </span>
-              )
+            switch (props.variant) {
+              case "validationPositive":
+                return (
+                  <span className={styles.validationIcon}>
+                    <Icon icon={successIcon} role="presentation" />
+                  </span>
+                )
+              case "validationNegative":
+                return (
+                  <span className={styles.validationIcon}>
+                    <Icon icon={exclamationIcon} role="presentation" />
+                  </span>
+                )
+              case "validationCautionary":
+                return (
+                  <span className={styles.validationIcon}>
+                    <Icon icon={exclamationIcon} role="presentation" />
+                  </span>
+                )
+              case "validationInformative":
+                return (
+                  <span className={styles.validationIcon}>
+                    <Icon icon={informationIcon} role="presentation" />
+                  </span>
+                )
+              case "profile":
+                return (
+                  <span className={styles.validationIcon}>
+                    {props.avatar && renderAvatar(props.avatar)}
+                  </span>
+                )
+              default:
+                return
             }
           })()}
         <span
