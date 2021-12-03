@@ -6,10 +6,10 @@ import configureIcon from "@kaizen/component-library/icons/arrow-forward.icon.sv
 import closeIcon from "@kaizen/component-library/icons/close.icon.svg"
 import classnames from "classnames"
 import { Tooltip, TooltipProps } from "@kaizen/draft-tooltip"
-import { MOBILE_QUERY } from "@kaizen/component-library/components/NavigationBar/constants"
 import Media from "react-media"
 import { SpotProps } from "@kaizen/draft-illustration"
 
+export const MOBILE_QUERY = "(max-width: 767px)"
 const styles = require("./GuidanceBlock.scss")
 
 export type ActionProps = ButtonProps & {
