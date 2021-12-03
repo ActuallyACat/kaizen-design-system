@@ -21,7 +21,7 @@
     "lint": "elm-format --validate packages && yarn eslint --max-warnings=0 && yarn prettier && stylelint '**/*.scss'",
     "lint:fix": "elm-format --yes packages && yarn eslint --max-warnings=0 --fix && yarn prettier --write",
     "clean:storybook": "rimraf 'storybook/public'",
-    "clean": "lerna run clean && yarn gatsby clean && yarn clean:storybook && rimraf 'elm-stuff'",
+    "clean": "yarn wsrun clean && yarn gatsby clean && yarn clean:storybook && rimraf 'elm-stuff'",
     "reset": "yarn clean && yarn install --force",
     "chromatic": "chromatic",
     "preinstall": "scripts/check-if-authenticated-to-github-registry.bash"
@@ -78,7 +78,6 @@
     "jest-canvas-mock": "^2.3.1",
     "jest-circus": "^27.3.1",
     "jest-static-stubs": "^0.0.1",
-    "lerna": "^3.22.1",
     "lodash.isempty": "^4.4.0",
     "node-fetch": "^2.6.6",
     "node-sass": "^4.14.1",
@@ -103,7 +102,8 @@
     "ts-jest": "^26.5.6",
     "typescript": "^4.4.4",
     "typescript-plugin-css-modules": "^2.8.0",
-    "webpack": "^4.46.0"
+    "webpack": "^4.46.0",
+    "wsrun": "^5.2.4"
   },
   "devDependencies": {
     "@storybook/node-logger": "^6.3.12",
