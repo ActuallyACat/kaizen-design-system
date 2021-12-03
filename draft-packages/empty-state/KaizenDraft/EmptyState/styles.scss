@@ -46,19 +46,19 @@
   }
 
   &.positive {
-    background-color: $color-green-100;
+    background-color: $color-green-300;
   }
   &.negative {
-    background-color: $color-red-100;
+    background-color: $color-red-300;
   }
   &.action {
-    background-color: $color-orange-100;
+    background-color: $color-orange-300;
   }
   &.neutral {
-    background-color: $color-purple-100;
+    background-color: $color-purple-300;
   }
   &.informative {
-    background-color: $color-blue-100;
+    background-color: $color-blue-300;
   }
 }
 
